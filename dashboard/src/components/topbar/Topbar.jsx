@@ -1,5 +1,6 @@
 import React from 'react'
 import "./topbar.css"
+import profilephoto from "../../assets/image/profil-1.png"
 import { NotificationsNone, MailOutline } from '@material-ui/icons';
 
 export default function Topbar() {
@@ -19,6 +20,7 @@ export default function Topbar() {
                          <MailOutline />
                          <span className='topIconBag'>2</span>
                     </div>
+                    <img src={profilephoto} className='topAvatar'/>
                 </div>
             </div>
         </div>
