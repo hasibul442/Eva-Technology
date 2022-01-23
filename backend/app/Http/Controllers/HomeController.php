@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Company;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -23,6 +24,12 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        if(Company::get()->count()==1){
+            return view('dashboard');
+        }
+        else{
+            return view('company_info.info-add');
+        }
+
     }
 }

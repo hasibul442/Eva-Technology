@@ -1367,10 +1367,10 @@ body.boxed-layout {
 
 /*!
  * Waves v0.7.6
- * http://fian.my.id/Waves 
- * 
- * Copyright 2014-2018 Alfiana E. Sibuea and other contributors 
- * Released under the MIT license 
+ * http://fian.my.id/Waves
+ *
+ * Copyright 2014-2018 Alfiana E. Sibuea and other contributors
+ * Released under the MIT license
  * https://github.com/fians/Waves/blob/master/LICENSE */
 .waves-effect {
   position: relative;
@@ -2318,7 +2318,7 @@ body.boxed-layout {
     margin: 0 0 0 1em; }
 
 /*
-    Common 
+    Common
 */
 .wizard, .tabcontrol {
   display: block;
@@ -2998,3 +2998,7 @@ body.authentication-bg-pattern {
       text-align: right;
       padding-right: 10px;
       padding-left: 20px; } }
+
+
+
+
