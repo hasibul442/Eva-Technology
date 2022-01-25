@@ -13,17 +13,18 @@
       <!-- Datatable js -->
       <script src="{{ asset('assets/libs/datatables/jquery.dataTables.min.js') }}"></script>
       <script src="{{ asset('assets/libs/datatables/dataTables.bootstrap4.min.js') }}"></script>
-      <script src="{{ asset('assets/libs/datatables/dataTables.responsive.min.js') }}"></script>
-      <script src="{{ asset('assets/libs/datatables/responsive.bootstrap4.min.js') }}"></script>
-
-      <!-- Dashboard Init JS -->
-      <script src="{{ asset('assets/js/pages/dashboard.init.js') }}"></script>
-
+      
         <!--Summernote js-->
         <script src="{{ asset('assets/libs/summernote/summernote-bs4.min.js') }}"></script>
 
         <!-- Init js -->
         <script src="{{ asset('assets/js/pages/form-summernote.init.js') }}"></script>
+
+        <!-- Sweet Alerts js -->
+        <script src="{{ asset('assets/libs/sweetalert2/sweetalert2.min.js') }}"></script>
+
+        <!-- Sweet alert init js-->
+        <script src="{{ asset('assets/js/pages/sweet-alerts.init.js') }}"></script>
       <!-- App js -->
       <script src="{{ asset('assets/js/app.min.js') }}"></script>
 

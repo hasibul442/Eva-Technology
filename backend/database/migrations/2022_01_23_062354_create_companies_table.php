@@ -18,10 +18,10 @@ class CreateCompaniesTable extends Migration
             $table->string('company_name')->nullable();
             $table->string('email')->nullable();
             $table->string('phone_no')->nullable();
-            $table->string('mission')->nullable();
-            $table->string('vission')->nullable();
-            $table->string('why_choose_us')->nullable();
-            $table->string('about')->nullable();
+            $table->longText('mission')->nullable();
+            $table->longText('vission')->nullable();
+            $table->longText('why_choose_us')->nullable();
+            $table->longText('about')->nullable();
             $table->string('location')->nullable();
             $table->string('facebook')->nullable();
             $table->string('logo')->nullable();

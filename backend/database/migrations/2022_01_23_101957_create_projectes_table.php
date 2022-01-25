@@ -26,9 +26,9 @@ class CreateProjectesTable extends Migration
             $table->double('received_amount',10,2)->default(0);
             $table->date('start_date')->nullable();
             $table->date('end_date')->nullable();
+            $table->string('duration')->nullable();
             $table->string('status')->nullable();
-            $table->string('description')->nullable();
-
+            $table->longText('description')->nullable();
             $table->timestamps();
         });
     }

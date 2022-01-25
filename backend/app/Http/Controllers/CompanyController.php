@@ -7,6 +7,10 @@ use Illuminate\Http\Request;
 
 class CompanyController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
     /**
      * Display a listing of the resource.
      *
@@ -16,6 +20,7 @@ class CompanyController extends Controller
     {
         return view('company_info.info-add');
     }
+    
 
     /**
      * Show the form for creating a new resource.

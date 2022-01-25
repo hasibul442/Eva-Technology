@@ -22,3 +22,10 @@ Route::get('/dashboard', [App\Http\Controllers\HomeController::class, 'index'])-
 
 Route::get('/company','App\Http\Controllers\CompanyController@index')->name('company.info');
 Route::post('/company-add','App\Http\Controllers\CompanyController@store')->name('company-add');
+
+Route::get('/projects','App\Http\Controllers\ProjectController@index')->name('projects.list');
+Route::get('/new/projects','App\Http\Controllers\ProjectController@create')->name('projects.new');
+Route::get('/running/projects','App\Http\Controllers\ProjectController@running_project')->name('projects.running');
+Route::post('/new/projects','App\Http\Controllers\ProjectController@store')->name('projects.add');
+
+Route::get('/employees','App\Http\Controllers\EmployeeController@index')->name('employee');

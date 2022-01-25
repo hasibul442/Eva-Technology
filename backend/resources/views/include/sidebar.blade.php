@@ -30,13 +30,13 @@
                         </a>
                         <ul class="nav-second-level" aria-expanded="false">
                             <li>
-                                <a href="#">Project List</a>
+                                <a href="{{ route('projects.list') }}">Project List</a>
                             </li>
                             <li>
-                                <a href="#">Running Project</a>
+                                <a href="{{ route('projects.running') }}">Running Project</a>
                             </li>
                             <li>
-                                <a href="#">New Project</a>
+                                <a href="{{ route('projects.new') }}">New Project</a>
                             </li>
                             {{-- <li>
                                 <a href="#">New Project</a>
@@ -45,7 +45,7 @@
                     </li>
 
                     <li>
-                        <a href="#">
+                        <a href="{{ route('employee') }}">
                             <i class=" dripicons-user-group"></i>
                             <span> Employees </span>
                         </a>
