@@ -36,8 +36,35 @@ class EmployeeController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $employee = new Employee;
+        $employee->id = date('ymd').rand(0,100);
+        $employee->name = $request->name;
+        $employee->email = $request->email;
+        $employee->phone_no = $request->phone_no;
+        $employee->address = $request->address;
+        $employee->gender = $request->gender;
+        $employee->nid = $request->nid;
+        $employee->position = $request->position;
+        $employee->dob = $request->dob;
+        $employee->join_date = $request->join_date;
+        $employee->basic_salary = $request->basic_salary;
+        $employee->house_rent = $request->house_rent;
+        $employee->medical = $request->medical;
+        $employee->ta_ma = $request->ta_ma;
+        $employee->yearly_gross = $request->yearly_gross;
+        $employee->status = 1;
+        $employee->is_team_member = 0;
+        if($request->hasFile('image')){
+            $image = $request->file('image');
+            $image_name = time().'.'.$image->getClientOriginalExtension();
+            $image->move(public_path().'/assets/images/employees/',$image_name);
+            $employee->image = $image_name;
+        }
+        $employee->save();
+        return response()->json(['success'=>'Data Add successfully.']);
+
     }
+
 
     /**
      * Display the specified resource.
@@ -83,4 +110,18 @@ class EmployeeController extends Controller
     {
         //
     }
+    public function employeestatus($id,$status){
+        $employees = Employee::find($id);
+        $employees->status = $status;
+        $employees->update();
+        return response()->json(['success'=>'Status changed successfully.']);
+    }
+
+    public function is_team_member($id,$is_team_member){
+        $employees = Employee::find($id);
+        $employees->is_team_member = $is_team_member;
+        $employees->update();
+        return response()->json(['success'=>'Status changed successfully.']);
+    }
+
 }

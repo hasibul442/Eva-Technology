@@ -23,7 +23,7 @@
         <div class="card ">
             <div class="card-body card1">
                 <h4 class="text-light text-center">Total Project</h4>
-                <h2 class="text-light text-center">5</h2>
+                <h2 class="text-light text-center">{{ App\Models\Project::get()->count() }}</h2>
             </div>
         </div>
     </div>
@@ -32,7 +32,7 @@
         <div class="card">
             <div class="card-body card2">
                 <h4 class="text-light text-center">Running Project</h4>
-                <h2 class="text-light text-center">5</h2>
+                <h2 class="text-light text-center">{{ App\Models\Project::where('status','Under Process')->get()->count() }}</h2>
             </div>
         </div>
     </div>
@@ -41,7 +41,7 @@
         <div class="card">
             <div class="card-body card3">
                 <h4 class="text-light text-center">Complete Project</h4>
-                <h2 class="text-light text-center">5</h2>
+                <h2 class="text-light text-center">{{ App\Models\Project::where('status','Complete')->get()->count() }}</h2>
             </div>
         </div>
     </div>
@@ -50,7 +50,7 @@
         <div class="card">
             <div class="card-body card4">
                 <h4 class="text-light text-center">Total Client</h4>
-                <h2 class="text-light text-center">5</h2>
+                <h2 class="text-light text-center">{{ App\Models\Project::select('client_company_name')->groupBy('client_company_name')->get()->count() }}</h2>
             </div>
         </div>
     </div>
@@ -59,7 +59,7 @@
         <div class="card">
             <div class="card-body card5">
                 <h4 class="text-center">Employee</h4>
-                <h2 class="text-center">5</h2>
+                <h2 class="text-center">{{ App\Models\Employee::get()->count() }}</h2>
             </div>
         </div>
     </div>

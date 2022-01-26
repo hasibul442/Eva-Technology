@@ -45,6 +45,12 @@
                     </li>
 
                     <li>
+                        <a href="{{ route('service') }}">
+                            <i class="dripicons-network-3"></i>
+                            <span> Services </span>
+                        </a>
+                    </li>
+                    <li>
                         <a href="{{ route('employee') }}">
                             <i class=" dripicons-user-group"></i>
                             <span> Employees </span>

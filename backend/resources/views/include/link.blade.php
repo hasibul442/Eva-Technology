@@ -17,6 +17,7 @@
         <!-- DataTables -->
         <link href="{{ asset('assets/libs/datatables/dataTables.bootstrap4.min.css') }}" rel="stylesheet" type="text/css"/>
         {{-- <link href="{{ asset('assets/libs/datatables/responsive.bootstrap4.min.css') }}" rel="stylesheet" type="text/css"/> --}}
+        <link href="{{ asset('assets/custom/bootstrap-toggle/css/bootstrap-toggle.min.css') }}" rel="stylesheet">
 
         <link href="{{ asset('assets/libs/sweetalert2/sweetalert2.min.css') }}" rel="stylesheet" type="text/css" />
         <!-- App css -->
@@ -24,6 +25,7 @@
         <link href="{{ asset('assets/css/icons.min.css') }}" rel="stylesheet" type="text/css" />
         <link href="{{ asset('assets/css/app.min.css') }}" rel="stylesheet" type="text/css" />
         <script src="https://code.jquery.com/jquery-3.6.0.slim.js" integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
+        <script src="{{ asset('assets/custom/bootstrap-toggle/js/bootstrap-toggle.min.js') }}"></script>
 
 
     </head>

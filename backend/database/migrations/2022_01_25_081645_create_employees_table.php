@@ -30,7 +30,7 @@ class CreateEmployeesTable extends Migration
             $table->double('basic_salary',10,2)->default(0);
             $table->double('house_rent',10,2)->default(0);
             $table->double('medical',10,2)->default(0);
-            $table->double('ta/ma',10,2)->default(0);
+            $table->double('ta_ma',10,2)->default(0);
             $table->double('yearly_gross',10,2)->default(0);
             $table->timestamps();
         });

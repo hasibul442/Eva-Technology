@@ -13,7 +13,7 @@
       <!-- Datatable js -->
       <script src="{{ asset('assets/libs/datatables/jquery.dataTables.min.js') }}"></script>
       <script src="{{ asset('assets/libs/datatables/dataTables.bootstrap4.min.js') }}"></script>
-      
+
         <!--Summernote js-->
         <script src="{{ asset('assets/libs/summernote/summernote-bs4.min.js') }}"></script>
 
