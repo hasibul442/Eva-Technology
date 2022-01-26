@@ -47,7 +47,7 @@
                             <td><img src="{{ asset('/assets/images/services/'.$item->image) }}" alt="" style="height: 50px; width:50px"></td>
                             <td>{!! $item->description !!}</td>
                             <td>
-                                @foreach (App\Models\Servicetech::where('service_id',$item->id)->get() as $item_1)
+                                @foreach (App\Models\Servicetech::where('service_id',$item->id)->where('status',1)->get() as $item_1)
                                     <span class="badge" style="color: {{ $item_1->tag_text_color }}; background:{{ $item_1->tag_bg_color }}">{{ $item_1->tag_name }}</span>
                                 @endforeach
                             </td>
@@ -129,7 +129,7 @@
 
 
                    <div class="text-right">
-                        <button type="submit" class="btn btn-primary">Back</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                         <button type="submit" class="btn btn-info">Submit</button>
                    </div>
                 </form>
