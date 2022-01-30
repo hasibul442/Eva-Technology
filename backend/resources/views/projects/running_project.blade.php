@@ -53,7 +53,7 @@
                         <td>{{ $item->status}}</td>
                         <td>
                             {{-- <a class="btn btn-sm btn-outline-warning" href="javascript:void(0);" onclick="editBank({{ $item->id }})"><i class="mdi mdi-circle-edit-outline"></i></a> --}}
-                            <a class="btn btn-sm btn-outline-info" href="javascript:void(0);" data-id="{{ $item->id }}"><i class="mdi mdi-eye"></i></a>
+                            <a class="btn btn-sm btn-outline-info" href="{{ route('project.details', $item->id) }}" ><i class="mdi mdi-eye"></i></a>
                         </td>
                     </tr>
                 @endforeach

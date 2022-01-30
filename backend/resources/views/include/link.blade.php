@@ -20,6 +20,8 @@
         <link href="{{ asset('assets/custom/bootstrap-toggle/css/bootstrap-toggle.min.css') }}" rel="stylesheet">
 
         <link href="{{ asset('assets/libs/sweetalert2/sweetalert2.min.css') }}" rel="stylesheet" type="text/css" />
+        <link href="{{ asset('assets/libs/custombox/custombox.min.css') }}" rel="stylesheet">
+
         <!-- App css -->
         <link href="{{ asset('assets/css/bootstrap.min.css') }}" rel="stylesheet" type="text/css" />
         <link href="{{ asset('assets/css/icons.min.css') }}" rel="stylesheet" type="text/css" />

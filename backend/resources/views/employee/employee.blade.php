@@ -64,7 +64,7 @@
                             </td>
                             <td style="white-space: nowrap">
                                 <a class="btn btn-xs btn-outline-warning" href="javascript:void(0);" onclick="editBank({{ $item->id }})"><i class="mdi mdi-circle-edit-outline"></i></a>
-                                <a class="btn btn-xs btn-outline-info" href="javascript:void(0);" data-id="{{ $item->id }}"><i class="mdi mdi-eye"></i></a>
+                                <a class="btn btn-xs btn-outline-info" href="{{ route('employee.show', $item->id) }}"><i class="mdi mdi-eye"></i></a>
                                 <a class="btn btn-xs btn-outline-danger" href="javascript:void(0);" data-id="{{ $item->id }}"><i class="mdi mdi-delete-outline"></i></a>
                             </td>
                         </tr>

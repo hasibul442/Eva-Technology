@@ -72,9 +72,10 @@ class EmployeeController extends Controller
      * @param  \App\Models\Employee  $employee
      * @return \Illuminate\Http\Response
      */
-    public function show(Employee $employee)
+    public function show($id)
     {
-        //
+        $employee = Employee::find($id);
+        return view('employee.details',compact('employee'));
     }
 
     /**
@@ -110,14 +111,14 @@ class EmployeeController extends Controller
     {
         //
     }
-    public function employeestatus($id,$status){
+    public function employeestatus($id, $status){
         $employees = Employee::find($id);
         $employees->status = $status;
         $employees->update();
         return response()->json(['success'=>'Status changed successfully.']);
     }
 
-    public function is_team_member($id,$is_team_member){
+    public function is_team_member($id, $is_team_member){
         $employees = Employee::find($id);
         $employees->is_team_member = $is_team_member;
         $employees->update();

@@ -13,6 +13,10 @@ class ServiceController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
     public function index()
     {
         $service = Service::get();
@@ -62,6 +66,20 @@ class ServiceController extends Controller
         return response()->json(['success'=>'Data Add successfully.']);
     }
 
+    public function tag_store(Request $request){
+
+        for($i=0;$i<count($request->tag_name);$i++){
+            $servicetech = new Servicetech;
+            $servicetech->service_id = $request->service_id;
+            $servicetech->tag_name = $request->tag_name[$i];
+            $servicetech->tag_text_color = $request->tag_text_color[$i];
+            $servicetech->tag_bg_color = $request->tag_bg_color[$i];
+            $servicetech->status = 1;
+            $servicetech->save();
+
+        }
+        return response()->json(['success'=>'Data Add successfully.']);
+    }
     /**
      * Display the specified resource.
      *
@@ -81,9 +99,10 @@ class ServiceController extends Controller
      * @param  \App\Models\Service  $service
      * @return \Illuminate\Http\Response
      */
-    public function edit(Service $service)
+    public function edit($id)
     {
-        //
+        $service = Service::find($id);
+        return response()->json($service);
     }
 
     /**
@@ -96,6 +115,22 @@ class ServiceController extends Controller
     public function update(Request $request, Service $service)
     {
         //
+    }
+
+    public function servicetag_edit($id)
+    {
+        $servicetag = Servicetech::find($id);
+        return response()->json($servicetag);
+    }
+
+    public function servicetag_update(Request $request){
+        $servicetag = Servicetech::find($request->id);
+        $servicetag->tag_name = $request->input('tag_name_update');
+        $servicetag->tag_text_color = $request->input('tag_text_color_update');
+        $servicetag->tag_bg_color = $request->input('tag_bg_color_update');
+        // $bank->balance = $request->balance;
+        $servicetag->update();
+        return response()->json($servicetag);
     }
 
     /**

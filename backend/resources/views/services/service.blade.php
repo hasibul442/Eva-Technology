@@ -55,7 +55,7 @@
                                 <input name="status" class="status" id="status1" type="checkbox" data-toggle="toggle" data-on="Active" data-off="Deactive" data-size="small" data-onstyle="success" data-offstyle="danger" data-id="{{ $item->id }}" {{ $item->status == 1 ? 'checked' : '' }}>
                             </td>
                             <td style="white-space: nowrap">
-                                <a class="btn btn-xs btn-outline-warning" href="javascript:void(0);" onclick="editBank({{ $item->id }})"><i class="mdi mdi-circle-edit-outline"></i></a>
+                                {{-- <a  href=".modal-demo2" class="btn btn-xs btn-outline-warning service-tag-edit" data-animation="fadein" data-plugin="custommodal"  data-overlaySpeed="100" onclick="editService({{ $item->id }})"><i class="mdi mdi-circle-edit-outline"></i></a> --}}
                                 <a class="btn btn-xs btn-outline-info" href="{{ route('service.details', $item->id) }}"><i class="mdi mdi-eye"></i></a>
                                 <a class="btn btn-xs btn-outline-danger deletebtn" href="javascript:void(0);" data-id="{{ $item->id }}"><i class="mdi mdi-delete"></i></a>
                             </td>
@@ -137,6 +137,8 @@
         </div>
     </div>
 </div>
+
+
 
 <script type="text/javascript">
     $(document).ready(function() {

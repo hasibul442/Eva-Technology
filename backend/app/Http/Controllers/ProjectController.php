@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Project;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\File;
 
 class ProjectController extends Controller
 {
@@ -73,9 +74,10 @@ class ProjectController extends Controller
      * @param  \App\Models\Project  $project
      * @return \Illuminate\Http\Response
      */
-    public function show(Project $project)
+    public function show($id)
     {
-        //
+        $project = Project::find($id);
+        return view('projects.project_details', compact('project'));
     }
 
     /**
@@ -84,9 +86,10 @@ class ProjectController extends Controller
      * @param  \App\Models\Project  $project
      * @return \Illuminate\Http\Response
      */
-    public function edit(Project $project)
+    public function edit($id)
     {
-        //
+        $project = Project::find($id);
+        return view('projects.edit', compact('project'));
     }
 
     /**
@@ -96,9 +99,33 @@ class ProjectController extends Controller
      * @param  \App\Models\Project  $project
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Project $project)
+    public function update(Request $request, $id)
     {
-        //
+        $project = Project::find($id);
+        $project->client_name = $request->client_name;
+        $project->client_company_name = $request->client_company_name;
+        $project->phone_no = $request->phone_no;
+        $project->email = $request->email;
+        $project->location = $request->location;
+        $project->project_name = $request->project_name;
+        $project->work_order_price = $request->work_order_price;
+        $project->start_date = $request->start_date;
+        $project->duration = $request->duration;
+        $project->description = $request->description;
+        $project->status = $request->status;
+        if($request->hasFile('logo')){
+            $destination = public_path().'/assets/images/project/'.$project->company_logo;
+            if(File::exists($destination)){
+                File::delete($destination);
+            }
+            $image = $request->file('logo');
+            $image_name = time().'.'.$image->getClientOriginalExtension();
+            $image->move(public_path().'/assets/images/project/',$image_name);
+            $project->company_logo = $image_name;
+        }
+        $project->update();
+        return redirect()->route('projects.list');
+
     }
 
     /**
