@@ -20,9 +20,9 @@
 
 <div>
     <div class="card">
-        <div class="card-body emp_img_bg">
+        <div class="card-body emp_img_bg" >
            <div class="text-center">
-                <img src="{{ asset('assets/images/employees/'.$employee->image) }}" class="img-fluid rounded-circle" style="height: 250px;width:250px" alt="">
+                <img src="{{ asset('assets/images/employees/'.$employee->image) }}" class="img-fluid rounded-circle shadow" style="height: 250px;width:250px" alt="">
            </div>
         </div>
     </div>

@@ -3553,3 +3553,9 @@ body.authentication-bg-pattern {
     background: linear-gradient(to right, #2a0845, #6441A5);
 
 }
+.emp_img_bg {
+    background-image: url(../images/emp_prof_bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
