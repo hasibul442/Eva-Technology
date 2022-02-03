@@ -1,4 +1,10 @@
 .navbar-company-logo{
-    height: 80px;
-    width: 200px;
+    height: 60px;
+    width: 150px;
+}
+.nav-link{
+    color: brown;
+}
+.navbar-toggler, .navbar-toggler-icon{
+    color: brown;
 }
