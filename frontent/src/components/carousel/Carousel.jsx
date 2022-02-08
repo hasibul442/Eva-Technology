@@ -13,32 +13,47 @@ function Carousel1() {
             showStatus = {false}
             showThumbs= {false}
             stopOnHover= {false}
-            interval = { 10000 }
+            interval = { 5000 }
             >
                 <div>
-                    <div className="effect grid-width8 effect-six">
-                    <img src="carousel-image/1.jpg" className='carousel-image' alt="Image One"/>
+                    <div className="effect effect-one">
+                    <img src="carousel-image/1.jpg" className='carousel-image img-fluid' alt="Image One"/>
                     <div className="tab-text">
-                        <h2>grid column 8</h2>
-                        <p>Era of modern design </p>
-                        {/* <div className="icons-block"> <a href="#" className="social-icon-1"><i className="fa fa-facebook-official"></i></a> <a href="#" className="social-icon-2"><i className="fa fa-twitter-square"></i></a> <a href="#" className="social-icon-3"><i className="fa fa-youtube-square"></i></a> </div> */}
+                        <h2 className='slider-1-text slider-1-text-1' >Grow You Business With </h2>
+                        <h2 className='slider-1-text' style={{ color:'#f60186' }}>EVA TECHNOLOGY</h2>
+                        <p>We Work With <br/> Latest Technologies To Accelerate <br/> Your Digital Transformation </p>
                     </div>
                     </div>
                 </div>
                 <div>
-                    <div className="effect grid-width8 effect-six">
-                    <img src="carousel-image/2.jpg" className='carousel-image'/>
+                    <div className="effect effect-two">
+                    <img src="carousel-image/2.jpg" className='carousel-image img-fluid'/>
                     <div className="tab-text">
-                        <h2>grid column 8</h2>
-                        <p>Era of modern design </p>
-                        {/* <div className="icons-block"> <a href="#" className="social-icon-1"><i className="fa fa-facebook-official"></i></a> <a href="#" className="social-icon-2"><i className="fa fa-twitter-square"></i></a> <a href="#" className="social-icon-3"><i className="fa fa-youtube-square"></i></a> </div> */}
+                        <h2 className="slider-2-text">We Make <br/>Secure System</h2>
+                        <p >We provide reasonably secure software from unauthorized access</p> 
                     </div>
                     </div>
                 </div>
-               
+
+              
                 <div>
-                    <img src="carousel-image/3.jpg" className='carousel-image'/>
-                    {/* <p className="legend">Legend 3</p> */}
+                    <div className="effect effect-3 effect-lexi">
+                    <img src="carousel-image/3.jpg" className='carousel-image img-fluid'/>
+                    <div className="tab-text">
+                        <h2 className="slider-3-text">Responsive Design</h2>
+                        <p >We provide reasonably secure software from unauthorized access</p> 
+                    </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div className="effect effect-4 effect-moses">
+                    <img src="carousel-image/5.jpg" className='carousel-image img-fluid'/>
+                    <div className="tab-text">
+                        <h2 className="slider-4-text">Responsive Design</h2>
+                        <p >We provide reasonably secure software from unauthorized access</p> 
+                    </div>
+                    </div>
                 </div>
         </Carousel>
       </>

@@ -1,23 +1,19 @@
 .carousel-image{
-    height: 45rem;
+    height: 600px;
 }
+
+
 .effect {
 	margin: auto;
-	box-shadow: 0 0 15px 5px rgba(0, 0, 0, .07);
 	background-color: #fff;
-	/* border: 5px solid #f5f5f5 */
-}
-.grid-width8 {
-	max-width: auto!important
 }
 
 .effect img {
 	position: relative;
 }
 .effect .tab-text {
-	padding: 2em;
-	color: #fff;
-	text-transform: uppercase;
+	padding:1.5rem 0.5rem;
+	text-transform:capitalize;
 	font-size: 1.25rem;
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
@@ -27,21 +23,21 @@
 	width: 100%;
 	height: 100%
 }
+
 .tab-text h2 {
-	color: #fff;
 	margin: 0;
-	font-size: 1.5rem
+	font-size: 40px;
+	font-weight: 600;
 }
 
-.tab-text p {
+
+.effect .tab-text p {
 	color: #fff;
 	margin: 0;
 	font-size: 1rem
 }
-.effect.effect-six h2 {
-	font-family: Oswald
-}
-.effect.effect-six .tab-text:before {
+.effect.effect-two .tab-text:after,
+.effect.effect-one .tab-text:before {
 	height: 100%;
 	left: 0;
 	top: 0;
@@ -49,54 +45,353 @@
 	width: 100%;
 	content: ""
 }
-.effect.effect-six {
-	background-color: #3498db
+.effect.effect-one {
+	background-color: #6e7190
 }
-.effect.effect-six h2 {
-	text-align: center
+
+.slider-1-text-1{
+	padding-top: 50px;
+	color: #000;
 }
-.effect.effect-six img {
+.effect.effect-one .slider-1-text {
+	text-align: right;
+	font-family: Oswald
+}
+
+.effect.effect-one img {
 	transition: all .35s;
 	transform: translate3d(0, 0, 0) scale(1);
 	-webkit-transition: all .35s;
 	-webkit-transform: translate3d(0, 0, 0) scale(1)
 }
 
-.effect.effect-six:hover img {
+.effect.effect-one:hover img {
 	opacity: .4;
 	transform: translate3d(0, 0, 0) scale(1);
 	-webkit-transform: translate3d(0, 0, 0) scale(1)
 }
 
-.effect.effect-six p {
-	max-width: 130px;
+.effect.effect-one p {
 	padding: 0 10px;
-	margin: 30px;
-	text-align: right;
-	font-size: .9rem;
+	margin: 30px 100px;
+	text-align: left;
+	font-size: 20px;
 	line-height: 1.1;
 	position: absolute;
-	bottom: 0;
 	right: 0;
-	border-right: 3px solid #fff;
 	opacity: 0;
 	transition: all .35s;
 	font-family: Poppins
 }
 
-.effect.effect-six:hover p {
+.effect.effect-one:hover p {
 	opacity: 1
 }
 
-.effect.effect-six .tab-text:before {
-	background-color: #082aeb66;
+.effect.effect-one .tab-text:before {
+	background-color: #f71d95a2;
+	/* color: #f33f58; */
 	transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, -101%, 0);
 	transition: all .6s;
 	-webkit-transform: scale3d(4, 1.4, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, -101%, 0);
 	-webkit-transition: all 0.6s
 }
 
-.effect.effect-six:hover .tab-text:before {
+.effect.effect-one:hover .tab-text:before {
 	transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, 101%, 0);
 	-webkit-transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, 101%, 0)
 }
+
+
+/* --------------------Effect - 2------------ */
+
+.tab-text .slider-2-text{
+	margin: 0;
+	font-size: 40px;
+	font-weight: 600;
+	color: #fff;
+	text-align: left;
+}
+
+.effect.effect-two {
+	background: linear-gradient(-45deg, #f60186 0, #f33f58 100%)
+}
+.effect.effect-two img {
+	transition: all .35s;
+	transform: translate3d(0, 0, 0) scale(1);
+	-webkit-transition: all .35s;
+	-webkit-transform: translate3d(0, 0, 0) scale(1)
+}
+.effect.effect-two:hover img {
+	opacity: .6;
+	transform: translate3d(-50px, 0, 0) scale(1.1) rotate(3deg);
+	-webkit-transform: translate3d(-50px, 0, 0) scale(1.1) rotate(3deg)
+}
+.effect.effect-two h2 {
+	padding-top: 20%;
+	transform: scale3d(.8, .8, 1);
+	transition: all .35s;
+	-webkit-transform: scale3d(.8, .8, 1);
+	-webkit-transition: all .35s;
+	font-family: Oswald
+}
+
+.effect.effect-two .slider-2-text {
+	padding-top: 9%
+}
+
+.effect.effect-two:hover h2 {
+	transform: scale3d(1, 1, 1);
+	-webkit-transform: scale3d(1, 1, 1)
+}
+
+.effect.effect-two p {
+	font-size: 24px;
+	text-align: left;
+	padding: 40px;
+	opacity: 0;
+	transition: all .35s;
+	-webkit-transition: all .35s;
+	font-family: Poppins
+}
+
+.effect.effect-two:hover p {
+	transform: scale3d(1, 1, 1);
+	-webkit-transform: scale3d(1, 1, 1);
+	opacity: 1
+}
+
+.effect.effect-two .tab-text:after {
+	/* border-top: 1px solid #fff; */
+	/* border-bottom: 1px solid #fff; */
+	transform: rotate3d(0, 0, 1, 45deg) scale3d(1, 0, 1);
+	-webkit-transform: rotate3d(0, 0, 1, 45deg) scale3d(1, 0, 1);
+	opacity: 0;
+	transition: all .35s;
+	-webkit-transition: all .35s
+}
+
+.effect.effect-two:hover .tab-text:after {
+	transform: rotate3d(0, 0, 1, 45deg) scale3d(1, 1, 1);
+	-webkit-transform: rotate3d(0, 0, 1, 45deg) scale3d(1, 1, 1);
+	opacity: 1
+}
+
+
+
+/* --------------------Effect - 3------------ */
+
+
+.effect-3.effect-lexi img {
+	opacity: 0.9;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+}
+
+.effect-3.effect-lexi div::before,
+.effect-3.effect-lexi p {
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+}
+
+.effect-3.effect-lexi div::before {
+	position: absolute;
+	right: -100px;
+	bottom: -100px;
+	width: 300px;
+	height: 300px;
+	border: 2px solid #fff;
+	border-radius: 50%;
+	box-shadow: 0 0 0 900px rgba(161, 20, 20, 0.164);
+	content: '';
+	opacity: 0;
+	-webkit-transform: scale3d(1,1,1);
+	transform: scale3d(1,0, 1);
+}
+
+.effect-3.effect-lexi:hover img {
+	opacity: 0.6;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+.effect-3.effect-lexi .slider-3-text {
+	text-align: right;
+	color: #fff;
+	padding: 20px 20px;
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+	-webkit-transform: translate3d(5px,5px,0);
+	transform: translate3d(5px,5px,0);
+}
+
+.effect-3.effect-lexi p {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	padding: 0 1.5em 1.5em 0;
+	width: 140px;
+	text-align: right;
+	opacity: 0;
+	-webkit-transform: translate3d(20px,20px,0);
+	transform: translate3d(20px,20px,0);
+}
+
+.effect-3.effect-lexi:hover div::before {
+	opacity: 1;
+	-webkit-transform: scale3d(1,1,1);
+	transform: scale3d(1,1,1);
+}
+
+.effect-3.effect-lexi:hover h2,
+.effect-3.effect-lexi:hover p {
+	opacity: 1;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+/* effect-4 */
+
+.effect-4.effect-moses {
+	background: -webkit-linear-gradient(-45deg, #f60186 0%,#0514e0 100%);
+	background: linear-gradient(-45deg, #f60186 0%,#0514e0 100%);
+}
+
+.effect-4.effect-moses img {
+	opacity: 0.85;
+	-webkit-transition: opacity 0.35s;
+	transition: opacity 0.35s;
+}
+
+.effect-4.effect-moses h2,
+.effect-4.effect-moses p {
+	padding: 20px;
+	width: 20%;
+	height: 20%;
+	border: 2px solid #fff;
+}
+
+.effect-4.effect-moses h2 {
+	padding: 20px;
+	width: 25%;
+	height: 25%;
+	text-align: left;
+	color: #fff;
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+	-webkit-transform: translate3d(10px,10px,0);
+	transform: translate3d(10px,10px,0);
+}
+
+.effect-4.effect-moses p {
+	float: right;
+	padding: 20px;
+	text-align: right;
+	opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: translate3d(-300%,-50%,0);
+	transform: translate3d(-300%,-50%,0);
+}
+
+.effect-4.effect-moses:hover h2 {
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+.effect-4.effect-moses:hover p {
+	opacity: 1;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+.effect-4.effect-moses:hover img {
+	opacity: 0.6;
+}
+
+
+@media screen and (max-width: 600px) {
+	.carousel-image {
+		height: 300px;
+	}
+	.effect .tab-text {
+		padding: 1rem;
+		text-transform:capitalize;
+		font-size: 1.25rem;
+		-webkit-backface-visibility: hidden;
+		backface-visibility: hidden;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%
+	}
+	.tab-text .slider-1-text{
+		margin: 0;
+		font-size: 14px;
+		font-weight: 600;
+	}
+	.tab-text .slider-1-text-1{
+		padding-top: 0px;
+		color: #000;
+	}
+
+	.effect.effect-one p {
+		/* max-width: 130px; */
+		padding: 0 10px;
+		margin: 15px 0px;
+		text-align: left;
+		font-size: 12px;
+		line-height: 1.1;
+		position: absolute;
+		right: 0;
+		opacity: 0;
+		transition: all .35s;
+		font-family: Poppins
+	}
+	.tab-text .slider-2-text{
+		margin: 0;
+		font-size: 18px;
+		font-weight: 600;
+		color: #fff;
+		text-align: left;
+	}
+	.effect.effect-two:hover img {
+		opacity: .5;
+		transform: translate3d(-25px, 0, 0) scale(1.1) rotate(3deg);
+		-webkit-transform: translate3d(-25px, 0, 0) scale(1.1) rotate(3deg)
+	}
+	.effect.effect-two p {
+		font-size: 12px;
+		text-align: left;
+		padding: 20px;
+		opacity: 0;
+		transition: all .35s;
+		-webkit-transition: all .35s;
+		font-family: Poppins
+	}
+	.effect-3.effect-lexi .slider-3-text {
+		font-size: 20px;
+	}
+	.effect-3.effect-lexi p {
+		font-size: 14px;
+	}
+
+	.effect-4.effect-moses h2 {
+		padding: 10px;
+		font-size: 14px;
+		width: 30%;
+		height: auto;
+		text-align: left;
+		color: #fff;
+	}
+	
+	.effect-4.effect-moses p {
+		float: right;
+		font-size: 12px;
+		text-align: right;
+		width: 50%;
+		height: auto;
+
+	}
+  }
