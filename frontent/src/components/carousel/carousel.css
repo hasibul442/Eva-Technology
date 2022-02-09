@@ -267,14 +267,14 @@
 .effect-4.effect-moses p {
 	padding: 20px;
 	width: 20%;
-	height: 20%;
+	height:auto;
 	border: 2px solid #fff;
 }
 
 .effect-4.effect-moses h2 {
 	padding: 20px;
 	width: 25%;
-	height: 25%;
+	height: auto;
 	text-align: left;
 	color: #fff;
 	-webkit-transition: -webkit-transform 0.35s;

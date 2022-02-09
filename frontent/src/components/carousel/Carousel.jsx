@@ -50,7 +50,7 @@ function Carousel1() {
                     <div className="effect effect-4 effect-moses">
                     <img src="carousel-image/5.jpg" className='carousel-image img-fluid'/>
                     <div className="tab-text">
-                        <h2 className="slider-4-text">Responsive Design</h2>
+                        <h2 className="slider-4-text">Custom Design Application</h2>
                         <p >We provide reasonably secure software from unauthorized access</p> 
                     </div>
                     </div>
