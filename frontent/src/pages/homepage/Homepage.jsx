@@ -146,7 +146,8 @@ function Homepage() {
               </div>
           </div>
 
-          <div className='container mobile-view'>
+          <div className='container'>
+              <div className='mobile-view'>
               <h2 className='pt-5 text-center'>What We Provide</h2>
               <div className='solid-solution-box mx-auto'>
                 <h6 className='text-center solid-solution-text-1'>Solid Solution</h6>
@@ -280,6 +281,7 @@ function Homepage() {
                       </SwiperSlide>
                 </Swiper>
               </div>
+              </div>
           </div>
 
           <section>
@@ -293,7 +295,7 @@ function Homepage() {
                         </div>
                       </div>
                       <div className='col-md-6'>
-                        <p>Eva Technology is an Information & Communication Technologies, Software Developments, Electrics & Electronics Local Distributors, supplies & trading company based of overall Bangladesh & abroad. Focusing primarily on bringing new and upcoming technologies to the Bangladeshi ICT & Power Distribution market</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                         <ul>
                           <li>We are proud ourselves in existing the way of the ICT & Power Distributor in the market</li>
                           <li>We are always looking out for new and exciting products to presence ourselves on the Bangladesh market.</li>
