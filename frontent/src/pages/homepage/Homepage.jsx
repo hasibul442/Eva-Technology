@@ -284,17 +284,17 @@ function Homepage() {
               </div>
           </div>
 
-          <section>
-              <div className='card'>
+          <section className="container-xl-12 ">
+              <div className='about-us'>
                   <div className='card-body'>
-                    <h2 className='pt-5 text-center'>About Us</h2>
+                    <h2 className='pt-5 text-center text-light'>About Us</h2>
                     <div className='row pt-5'>
                       <div className='col-md-6 '>
                         <div className='text-center'>
                           <img src="about/about-img.png" className='img-fluid w-50'/>
                         </div>
                       </div>
-                      <div className='col-md-6'>
+                      <div className='col-md-6 text-light'>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                         <ul>
                           <li>We are proud ourselves in existing the way of the ICT & Power Distributor in the market</li>
@@ -305,6 +305,109 @@ function Homepage() {
                     </div>
                   </div>
               </div>
+          </section>
+
+          <section className="container">
+                <h2 className='pt-5 text-center'>Why You Should Hire Us?</h2>
+                <div className='row pt-5'>
+
+                  <div className='col-md-3 pb-4'>
+                    <div className='card border-0 shadow-lg'>
+                      <div className='card-body'>
+                        <div className='text-center'>
+                          <img src="why-hire/certificate.png" className='why-hire-image img-fluid' alt="Long Experience"/>
+                        </div>
+                        <br/>
+                        <h3 className='text-center'>Long Experience</h3>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className='col-md-3 pb-4'>
+                    <div className='card border-0 shadow-lg'>
+                      <div className='card-body'>
+                        <div className='text-center'>
+                          <img src="why-hire/focus.png" className='why-hire-image img-fluid' alt="Long Experience"/>
+                        </div>
+                        <br/>
+                        <h3 className='text-center'>Focus On Results</h3>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className='col-md-3 pb-4'>
+                    <div className='card border-0 shadow-lg'>
+                      <div className='card-body'>
+                        <div className='text-center'>
+                          <img src="why-hire/manager.png" className='why-hire-image img-fluid' alt="Long Experience"/>
+                        </div>
+                        <br/>
+                        <h3 className='text-center'>Run Technical Audit</h3>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className='col-md-3 pb-4'>
+                    <div className='card border-0 shadow-lg'>
+                      <div className='card-body'>
+                        <div className='text-center'>
+                          <img src="why-hire/rocket.png" className='why-hire-image img-fluid' alt="Long Experience"/>
+                        </div>
+                        <br/>
+                        <h3 className='text-center'>Fast Delivery</h3>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className='col-md-3 pb-4'>
+                    <div className='card border-0 shadow-lg'>
+                      <div className='card-body'>
+                        <div className='text-center'>
+                          <img src="why-hire/satisfied.png" className='why-hire-image img-fluid' alt="Long Experience"/>
+                        </div>
+                        <br/>
+                        <h3 className='text-center'>Satisfied Guarantee</h3>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className='col-md-3 pb-4'>
+                    <div className='card border-0 shadow-lg'>
+                      <div className='card-body'>
+                        <div className='text-center'>
+                          <img src="why-hire/support.png" className='why-hire-image img-fluid' alt="Long Experience"/>
+                        </div>
+                        <br/>
+                        <h3 className='text-center'>Quick Support</h3>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className='col-md-3 pb-4'>
+                    <div className='card border-0 shadow-lg'>
+                      <div className='card-body'>
+                        <div className='text-center'>
+                          <img src="why-hire/technical-support.png" className='why-hire-image img-fluid' alt="Long Experience"/>
+                        </div>
+                        <br/>
+                        <h3 className='text-center'>Highly Professional</h3>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className='col-md-3 pb-4'>
+                    <div className='card border-0 shadow-lg'>
+                      <div className='card-body'>
+                        <div className='text-center'>
+                          <img src="why-hire/web-design.png" className='why-hire-image img-fluid' alt="Long Experience"/>
+                        </div>
+                        <br/>
+                        <h3 className='text-center'>Excellent UI-UX</h3>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
           </section>
           <Footer/>
       </Router>

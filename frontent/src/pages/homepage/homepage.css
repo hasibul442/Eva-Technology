@@ -52,8 +52,20 @@
 .mobile-view{
     display: none;
 }
-
+.about-us{
+    background-color: #a81a1a;
+}
+.why-hire-image{
+    height: 80px;
+    width: 80px;
+}
 @media screen and (max-width: 600px) {
+    .solid-solution-box{
+        width: 50%;
+    }
+    .solid-solution-text-1{
+        white-space: nowrap;
+    }
     .mobile-view{
         display: contents;
     }
