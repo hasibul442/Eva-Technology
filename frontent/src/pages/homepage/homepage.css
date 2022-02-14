@@ -55,9 +55,31 @@
 .about-us{
     background-color: #a81a1a;
 }
+
+/* .why-hire-headline:after{
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+.why-hire-headline:hover:after { 
+    width: auto; 
+    left: 0; 
+  } */
+
+.why-hire-card{
+    height: 220px;
+}
 .why-hire-image{
     height: 80px;
     width: 80px;
+}
+.why-hire-text{
+    color: #1414ef;
 }
 @media screen and (max-width: 600px) {
     .solid-solution-box{

@@ -308,101 +308,101 @@ function Homepage() {
           </section>
 
           <section className="container">
-                <h2 className='pt-5 text-center'>Why You Should Hire Us?</h2>
+                <h2 className='pt-5 text-center why-hire-headline'>Why You Should Hire Us?</h2>
                 <div className='row pt-5'>
 
                   <div className='col-md-3 pb-4'>
-                    <div className='card border-0 shadow-lg'>
+                    <div className='card border-0 why-hire-card shadow-lg pt-2'>
                       <div className='card-body'>
                         <div className='text-center'>
                           <img src="why-hire/certificate.png" className='why-hire-image img-fluid' alt="Long Experience"/>
                         </div>
                         <br/>
-                        <h3 className='text-center'>Long Experience</h3>
+                        <h4 className='text-center why-hire-text'>Long Experience</h4>
                       </div>
                     </div>
                   </div>
 
                   <div className='col-md-3 pb-4'>
-                    <div className='card border-0 shadow-lg'>
+                    <div className='card border-0  shadow-lg why-hire-card pt-2'>
                       <div className='card-body'>
                         <div className='text-center'>
                           <img src="why-hire/focus.png" className='why-hire-image img-fluid' alt="Long Experience"/>
                         </div>
                         <br/>
-                        <h3 className='text-center'>Focus On Results</h3>
+                        <h4 className='text-center why-hire-text'>Focus On Results</h4>
                       </div>
                     </div>
                   </div>
 
                   <div className='col-md-3 pb-4'>
-                    <div className='card border-0 shadow-lg'>
+                    <div className='card border-0 shadow-lg why-hire-card pt-2'>
                       <div className='card-body'>
                         <div className='text-center'>
                           <img src="why-hire/manager.png" className='why-hire-image img-fluid' alt="Long Experience"/>
                         </div>
                         <br/>
-                        <h3 className='text-center'>Run Technical Audit</h3>
+                        <h4 className='text-center why-hire-text'>Run Technical Audit</h4>
                       </div>
                     </div>
                   </div>
 
                   <div className='col-md-3 pb-4'>
-                    <div className='card border-0 shadow-lg'>
+                    <div className='card border-0 shadow-lg why-hire-card pt-2'>
                       <div className='card-body'>
                         <div className='text-center'>
                           <img src="why-hire/rocket.png" className='why-hire-image img-fluid' alt="Long Experience"/>
                         </div>
                         <br/>
-                        <h3 className='text-center'>Fast Delivery</h3>
+                        <h4 className='text-center why-hire-text'>Fast Delivery</h4>
                       </div>
                     </div>
                   </div>
 
                   <div className='col-md-3 pb-4'>
-                    <div className='card border-0 shadow-lg'>
+                    <div className='card border-0 shadow-lg why-hire-card pt-2'>
                       <div className='card-body'>
                         <div className='text-center'>
                           <img src="why-hire/satisfied.png" className='why-hire-image img-fluid' alt="Long Experience"/>
                         </div>
                         <br/>
-                        <h3 className='text-center'>Satisfied Guarantee</h3>
+                        <h4 className='text-center why-hire-text'>Satisfied Guarantee</h4>
                       </div>
                     </div>
                   </div>
 
                   <div className='col-md-3 pb-4'>
-                    <div className='card border-0 shadow-lg'>
+                    <div className='card border-0 shadow-lg why-hire-card pt-2'>
                       <div className='card-body'>
                         <div className='text-center'>
                           <img src="why-hire/support.png" className='why-hire-image img-fluid' alt="Long Experience"/>
                         </div>
                         <br/>
-                        <h3 className='text-center'>Quick Support</h3>
+                        <h4 className='text-center why-hire-text'>Quick Support</h4>
                       </div>
                     </div>
                   </div>
 
                   <div className='col-md-3 pb-4'>
-                    <div className='card border-0 shadow-lg'>
+                    <div className='card border-0 shadow-lg why-hire-card pt-2'>
                       <div className='card-body'>
                         <div className='text-center'>
                           <img src="why-hire/technical-support.png" className='why-hire-image img-fluid' alt="Long Experience"/>
                         </div>
                         <br/>
-                        <h3 className='text-center'>Highly Professional</h3>
+                        <h4 className='text-center why-hire-text'>Highly Professional</h4>
                       </div>
                     </div>
                   </div>
 
                   <div className='col-md-3 pb-4'>
-                    <div className='card border-0 shadow-lg'>
+                    <div className='card border-0 shadow-lg why-hire-card pt-2'>
                       <div className='card-body'>
                         <div className='text-center'>
                           <img src="why-hire/web-design.png" className='why-hire-image img-fluid' alt="Long Experience"/>
                         </div>
                         <br/>
-                        <h3 className='text-center'>Excellent UI-UX</h3>
+                        <h4 className='text-center why-hire-text'>Excellent UI-UX</h4>
                       </div>
                     </div>
                   </div>
