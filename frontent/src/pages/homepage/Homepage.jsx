@@ -8,8 +8,8 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 import Carousel1 from '../.././components/carousel/Carousel';
-import Footer from '../.././components/footer/Footer';
-import Navbar from "../.././components/navbar/Navbar";
+// import Footer from '../.././components/footer/Footer';
+// import Navbar from "../.././components/navbar/Navbar";
 
 import  './homepage.css';
 
@@ -21,14 +21,8 @@ function Homepage() {
   });
   return (
     <>
-      <Router>
-          <Navbar />
-          <Routes>
-            <Route path='/' exact/>
-          </Routes>
-          <Carousel1 />
-
-          <div className='container desktop-view'>
+    <Carousel1/>
+      <div className='container desktop-view'>
               <h2 className='pt-5 text-center'>What We Provide</h2>
               <div className='solid-solution-box mx-auto'>
                 <h6 className='text-center solid-solution-text-1'>Solid Solution</h6>
@@ -409,8 +403,6 @@ function Homepage() {
 
                 </div>
           </section>
-          <Footer/>
-      </Router>
     </>
   );
 }
