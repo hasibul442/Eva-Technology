@@ -81,6 +81,13 @@
 .why-hire-text{
     color: #1414ef;
 }
+.total-count{
+    background-color: #f60186;
+}
+.client-img{
+    height: 150px;
+    width: 100px;
+}
 @media screen and (max-width: 600px) {
     .solid-solution-box{
         width: 50%;

@@ -6,8 +6,15 @@ import 'swiper/css';
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import CountUp from 'react-countup';
+
+import OwlCarousel from 'react-owl-carousel2';
+import 'react-owl-carousel2/lib/styles.css';
+import 'react-owl-carousel2/src/owl.theme.green.css';
 
 import Carousel1 from '../.././components/carousel/Carousel';
+
+
 // import Footer from '../.././components/footer/Footer';
 // import Navbar from "../.././components/navbar/Navbar";
 
@@ -19,10 +26,48 @@ function Homepage() {
     delay: 200,
     mirror: true
   });
+  const options = {
+    loop:true,
+    autoplay: true,
+    nav:true,
+    margin:100,
+    smartSpeed:2000,
+    responsive: {
+      0: {
+        items: 1,
+        
+      },
+      480: {
+        items: 2,
+      },
+      990: {
+        items: 3,
+      },
+    }
+    
+};
   return (
     <>
     <Carousel1/>
-      <div className='container desktop-view'>
+          <section className='total-count'>
+              <div className='container'>
+                  <div className="row pt-4">
+                    <div className="p-2 col-sm-4 text-center">
+                      <p className='text-white' style={{ fontSize:"100px", fontWeight:"600"}}><CountUp end={10} /></p>
+                      <p className='text-white' style={{ fontSize:"24px", fontWeight:"600"}}>PROJECTS COMPLETED</p>
+                    </div>
+                    <div className="p-2 col-sm-4 text-center">
+                      <p className='text-white' style={{ fontSize:"100px", fontWeight:"600"}}> <CountUp end={200} /></p>
+                      <p className='text-white' style={{ fontSize:"24px", fontWeight:"600"}}>HAPPY CUSTOMERS</p>
+                    </div>
+                    <div className="p-2 col-sm-4 text-center">
+                      <p className='text-white' style={{ fontSize:"100px", fontWeight:"600"}}> <CountUp end={1} /></p>
+                      <p className='text-white' style={{ fontSize:"24px", fontWeight:"600"}}>YEARS OF EXPERIENCE</p>
+                    </div>
+                  </div>
+              </div>
+          </section>
+          <div className='container desktop-view'>
               <h2 className='pt-5 text-center'>What We Provide</h2>
               <div className='solid-solution-box mx-auto'>
                 <h6 className='text-center solid-solution-text-1'>Solid Solution</h6>
@@ -403,6 +448,41 @@ function Homepage() {
 
                 </div>
           </section>
+
+          <section className='project mt-5' style={{ "backgroundColor":"#fff" }}>
+            <div className='container pt-5'>
+              <h2 className='text-center'>Our Customers</h2>
+              <p className='text-center'>Few of the companies who get our services are showing here. <br/>A lot of company have worked with us like this.</p>
+
+              <OwlCarousel options={options}>
+
+                  <div className=" card border-0">
+                    <div className="card-body text-center">
+                       <div className='p-5'>
+                          <img src= "client/army.png" className=' client-img ' alt="Client" data-toggle="tooltip" data-placement="top" title="Jessore Cantonment" />
+                       </div>
+                    </div>
+                  </div>
+                  <div className="card border-0">
+                    <div className="card-body text-center">
+                      <div className='p-5'>
+                        <img src= "client/cccc.png" className=' client-img ' alt="Client" data-toggle="tooltip" data-placement="top" title="China Communiction Construct Company" />
+                      </div>
+                    </div>
+                  </div>
+                  <div className="card border-0">
+                    <div className="card-body text-center">
+                      <div className='p-5'>
+                        <img src= "client/bba.png" className=' client-img ' alt="Client" data-toggle="tooltip" data-placement="top" title="বাংলাদেশ সেতু কর্তৃপক্ষ" />
+                      </div>  
+                    </div>
+                  </div>
+              
+
+                </OwlCarousel>
+            </div>
+          </section>
+
     </>
   );
 }
