@@ -88,6 +88,15 @@
     height: 150px;
     width: 100px;
 }
+
+.contact-headline{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px;
+    text-transform: uppercase;
+    font-weight: 600;
+
+}
+
 @media screen and (max-width: 600px) {
     .solid-solution-box{
         width: 50%;

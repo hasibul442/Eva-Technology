@@ -1,10 +1,39 @@
 .footer{
-    background-color: #c9c9c9;
+    background-color: #000000;
+    color: #fff;
 }
 .footer-link{
     color: #f60186;
     text-decoration: none;
 }
+.footer-menu-link{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+}
+.footer-menu-link:hover{
+    padding-left: 10px;
+    color: #f60186;
+    transition: 0.5s;
+}
 .dev-name{
-    color: blue;
+    color: rgb(255, 255, 255);
+}
+.copyright-text a:hover{
+    color: #f60186;
+}
+.address{
+    font-size: 24px;
+    font-weight: 600;
+    color: #f60186;
+}
+.footer-icon{
+    color: #07fc1b;
+}
+.tel-link{
+    color: #fff;
+    text-decoration: none;
+}
+.tel-link:hover{
+    color: #fff;
 }

@@ -46,6 +46,23 @@ function Homepage() {
     }
     
 };
+  const options1 = {
+    loop:true,
+    autoplay: true,
+    smartSpeed:2000,
+    responsive: {
+      0: {
+        items: 1, 
+      },
+      480: {
+        items: 1,
+      },
+      990: {
+        items: 1,
+      },
+    }
+    
+};
   return (
     <>
     <Carousel1/>
@@ -479,7 +496,66 @@ function Homepage() {
                   </div>
               
 
-                </OwlCarousel>
+              </OwlCarousel>
+            </div>
+          </section>
+
+          <section className='testimonial mt-5'>
+            <div className='container p-5'>
+              <OwlCarousel options={options1}>
+
+                  <div>
+                    <div className="text-center">
+                        <h3 className='text-center'>"Amazing Designs and Quality Work!"</h3>
+                        <p>Great work from Eva Technology, I am so amazed with their service.<br/> I am grateful to them. They have provided quality work for us. I will recommended to other for getting best IT service.<br/> People can choose Eva Technology doubtfully for their it solution.</p>
+                        <h4 style={{ "color": "#1414ef" }}>Mohammad Mahbub Hassan</h4>
+                        <h6 style={{ "color": "#f60186" }}>"Chairman of OSL-KNS Group"</h6>
+                    </div>
+                  </div>
+              
+                  <div>
+                    <div className="text-center">
+                        <h3 className='text-center'>"Great Service"</h3>
+                        <p>Very good experience with Eva Technology. So impress by reactivity and the website result. He took time to understand my request and was really reactive.<br/> I will definitely recommend Eva Technology to my friend. Thanks a lot, you made my day :)</p>
+                        <h4 style={{ "color": "#1414ef" }}>.....</h4>
+                        <h6 style={{ "color": "#f60186" }}>"....."</h6>
+                    </div>
+                  </div>
+              
+
+              </OwlCarousel>
+            </div>
+          </section>
+
+          <section className='contact' style={{ "backgroundColor":"#fff" }}>
+            <div className='container pt-5'>
+              <div className='row'>
+                <div className='col-sm-6 my-auto'>
+                  <p className='contact-headline text-center'>Contact</p>
+                  <p className='text-center'>How we can help you. We like to talk and on the strength of that you are invited for a coffee at our head office.</p>
+                </div>
+
+                <div className='col-sm-6'>
+
+                  <form className='mt-5'>
+                    <div className="form-group">
+                      <input type="text" className="form-control"  placeholder="Full Name"/>
+                    </div>
+                    <br/>
+                    <div className="form-group">
+                      <input type="email" className="form-control" id="email" placeholder="Email"/>
+                    </div>
+                    <br/>
+                    <div className="form-group">
+                      <textarea type="email" rows="6" className="form-control"  placeholder="Discription"></textarea>
+                    </div>
+                    <br/>
+
+                    <button type="submit" className="btn btn-primary">Send Message</button>
+                  </form>
+                </div>
+              </div>
+              
             </div>
           </section>
 
