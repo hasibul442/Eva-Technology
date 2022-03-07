@@ -517,8 +517,8 @@ function Homepage() {
                     <div className="text-center">
                         <h3 className='text-center'>"Great Service"</h3>
                         <p>Very good experience with Eva Technology. So impress by reactivity and the website result. He took time to understand my request and was really reactive.<br/> I will definitely recommend Eva Technology to my friend. Thanks a lot, you made my day :)</p>
-                        <h4 style={{ "color": "#1414ef" }}>.....</h4>
-                        <h6 style={{ "color": "#f60186" }}>"....."</h6>
+                        <h4 style={{ "color": "#1414ef" }}>Major Ataur Rahaman</h4>
+                        <h6 style={{ "color": "#f60186" }}>"Second In Command(2IC)"</h6>
                     </div>
                   </div>
               
