@@ -1,0 +1,49 @@
+#nav-bar{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    
+}
+.navbar {
+    background-color: #ffffff;
+  }
+.navbar-company-logo{
+    height: 60px;
+    width: 150px;
+}
+.navbar-nav li {
+    padding: 0 10px;
+}
+
+.dropdown-menu li {
+    padding: 0 10px;
+}
+
+.nav-link{
+    color: #99046f;
+    font-size: 18px;
+    font-weight: 500;
+    float: left;
+}
+.dropdown-item{
+    color: #1414ef;
+    font-size: 18px;
+    font-weight: 500;
+    float: left;
+}
+.nav-link:hover, .dropdown-item:hover{
+    background-color: #f60186;
+    color: #ffffff;
+    padding-left: 10px;
+    padding-right: 10px;
+    transition: 0.5s;
+    border-radius: 50px 20px;
+    height: fixed;
+}
+.navbar-toggler{
+    color: #f60186;
+    border: 1px solid #1414ef;
+}
+.fa-bars{
+    color: #1414ef;
+}
