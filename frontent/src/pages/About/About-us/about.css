@@ -1,0 +1,12 @@
+.about-us-qutaion{
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url('./../../../../public/about/about-background.webp');
+    width: auto;
+    height: 500px;
+    /* opacity: 0.3; */
+}
+.item--title{
+    color: #fff;
+}
+.about-us-qutaion div{
+    padding-top: 10%;
+}

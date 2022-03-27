@@ -378,12 +378,9 @@ function Homepage() {
                         </div>
                       </div>
                       <div className='col-md-6 text-light'>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                        <ul>
-                          <li>We are proud ourselves in existing the way of the ICT & Power Distributor in the market</li>
-                          <li>We are always looking out for new and exciting products to presence ourselves on the Bangladesh market.</li>
-                          <li>Managed and marketed by personal experienced in the ICT field for a decade we feel we can achieve our goal of being a reliable and trustworthy partner to our clients and fellow ICT vendors.</li>
-                        </ul>
+                        <p>Eva Technology was established in 2021 by a team of young expert software professionals. Eva Technology is the fastest growing IT company in Bangladesh. Consistently delivering mission, our team has been delivering technically challenging projects under tight timelines, while also providing exceptional customer service and support to our clientele. This in turn has led to extremely positive long-term working relationships all over. Our detailed project process was created to ensure our projects are completed on-time, in-budget, and to the client’s complete satisfaction.</p>
+                        <p>Eva Technology is a customized software service firm located in Dhaka, Bangladesh. We have extensive experience in many diverse areas of software development. Our experienced staff of professionals has worked with a wide array of platforms, languages, and tools in the course of our various projects.</p>
+                        
                       </div>
                     </div>
                   </div>
