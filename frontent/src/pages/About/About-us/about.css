@@ -1,5 +1,5 @@
 .about-us-qutaion{
-    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url('./../../../../public/about/about-background.webp');
+    background-image: linear-gradient(#f60188cc,#99046fcc),url('./../../../../public/about/about-background.webp');
     width: auto;
     height: 500px;
     /* opacity: 0.3; */
@@ -9,4 +9,57 @@
 }
 .about-us-qutaion div{
     padding-top: 10%;
+}
+.mission-block{
+    transform: translate(0, -20%);
+}
+.mission-block-card{
+    background-color: #ffffff;
+    border: none;
+    /* height: 500px; */
+    --border-width: 3px;
+    border-radius: var(--border-width);
+}
+.mission-block-card::after {
+    position: absolute;
+    content: "";
+    top: calc(-1 * var(--border-width));
+    left: calc(-1 * var(--border-width));
+    z-index: -1;
+    width: calc(100% + var(--border-width) * 2);
+    height: calc(100% + var(--border-width) * 2);
+    background: linear-gradient(
+      60deg,
+      #5f86f2,
+      #a65ff2,
+      #f25fd0,
+      #f25f61,
+      #f2cb5f,
+      #abf25f,
+      #5ff281,
+      #5ff2f0
+    );
+    background-size: 300% 300%;
+    background-position: 0 50%;
+    border-radius: calc(2 * var(--border-width));
+    animation: moveGradient 5s alternate infinite;
+  }
+
+
+@keyframes moveGradient {
+  50% {
+    background-position: 100% 50%;
+  }
+}
+.mission-text{
+    color: #1414ef;
+    /* font-weight: 700; */
+}
+
+.company-info{
+    background-color: #1414ef93;
+}
+
+.team-member{
+    background-color: #fff;
 }
