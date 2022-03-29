@@ -1,5 +1,6 @@
 import React from 'react'
 import  './about.css';
+// import  './about.sass';
 function About() {
   return (
 
@@ -58,7 +59,7 @@ function About() {
         </div>
 
         <div className='company-info'>
-            <p className='h1 text-center pt-5 text-light'>Company Background</p>
+            <p className='h1 text-center pt-5 text-light' style={{ fontWeight:"700" }}>Company Background</p>
             <div className='container pb-5'>
               <div className='row'>
                 <div className='col-sm-6'>
@@ -72,7 +73,7 @@ function About() {
         </div>
 
         <div className='mt-4'>
-            <p className='h1 text-center pt-5'>Exprience</p>
+            <p className='h1 text-center pt-5' style={{ fontWeight:"700" }}>Exprience</p>
             <div className='container pb-5'>
               <div className='row'>
                 <div className='col-sm-6 my-auto'>
@@ -88,12 +89,31 @@ function About() {
             </div>
         </div>
 
-        <div className='team-member'>
+        {/* <div className='team-member'>
           <div className='container pt-5'>
-            <h2 className='text-center'>Our Team Member</h2>
+            <p className='h1 text-center' style={{ fontWeight:"700" }}>Our Team Member</p>
             <p className='text-center'>Some of our talented, skilled and experienced it expert. They are our dedicated member of Eva Technology.</p>
-          </div>
-        </div>
+
+            <div className="col-md-4 profile-pic text-center">
+                <div className="img-box">
+                    <img src="/about/info.png" className="img-fluid"/>
+                      <ul>
+                        <a href="#">
+                          <li><i className="fab fa-facebook"></i></li>
+                        </a>
+                        <a href="#">
+                          <li><i className="fab fa-twitter"></i></li>
+                        </a>
+                        <a href="#">
+                          <li><i className="fab fa-linkedin"></i></li>
+                        </a>
+                      </ul>
+                </div>
+                <h2>Evana Jahan </h2>
+                <h3>Founder / CEO</h3>
+            </div>
+            </div>
+        </div> */}
 
         <div>
           <div className='container pt-5 mb-5'>
@@ -102,51 +122,66 @@ function About() {
                 <img src='/about/whyus.png' className='img-fluid' alt='information'/>
               </div>
               <div className='col-sm-6 my-auto'>
-                <div id="accordion">
-                  <div className="card">
-                    <div className="card-header" id="headingOne">
-                      <h5 className="mb-0">
-                        <button className="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                          Collapsible Group Item #1
-                        </button>
-                      </h5>
-                    </div>
-
-                    <div id="collapseOne" className="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-                      <div className="card-body">
-                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                <p className='h1 text-center' style={{ color:"#f60186", fontWeight:"700" }}>Why Choose Us?</p>
+                <p className='text-center'>We know when you face any problem you want to solve it as soon as possible. Therefor, will try our best to support you when you want.</p><br/>
+                
+                <div className='card shadow'>
+                  <div className='card-body'>
+                    <div className="accordion accordion-flush" id="accordionFlushExample">
+                      <div className="accordion-item">
+                        <h2 className="accordion-header" id="flush-headingOne">
+                          <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            Best Quality Designs
+                          </button>
+                        </h2>
+                        <div id="flush-collapseOne" className="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                          <div className="accordion-body">Quality is our agreement. Better quality bring big change of a company. We are always updated to latest technology.</div>
+                        </div>
                       </div>
-                    </div>
-                  </div>
-                  <div className="card">
-                    <div className="card-header" id="headingTwo">
-                      <h5 className="mb-0">
-                        <button className="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                          Collapsible Group Item #2
-                        </button>
-                      </h5>
-                    </div>
-                    <div id="collapseTwo" className="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                      <div className="card-body">
-                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                      <div className="accordion-item">
+                        <h2 className="accordion-header" id="flush-headingTwo">
+                          <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            24x7 Live Support
+                          </button>
+                        </h2>
+                        <div id="flush-collapseTwo" className="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                          <div className="accordion-body">Let me know what problem are you facing immediately. We will response you as soon as possible. You can contact us 7 days in a week, 24 hours in a day that means all time. Feel free and comfortable to contact us.</div>
+                        </div>
                       </div>
-                    </div>
-                  </div>
-                  <div className="card">
-                    <div className="card-header" id="headingThree">
-                      <h5 className="mb-0">
-                        <button className="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                          Collapsible Group Item #3
-                        </button>
-                      </h5>
-                    </div>
-                    <div id="collapseThree" className="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-                      <div className="card-body">
-                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                      <div className="accordion-item">
+                        <h2 className="accordion-header" id="flush-headingThree">
+                          <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                            Result Oriented Projects
+                          </button>
+                        </h2>
+                        <div id="flush-collapseThree" className="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                          <div className="accordion-body">We are promised to deliver you a outcome as your demand. You will pay us according to our result after completing the project successfully. </div>
+                        </div>
+                      </div>
+                      <div className="accordion-item">
+                        <h2 className="accordion-header" id="flush-headingFour">
+                          <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                            Experienced Professionals
+                          </button>
+                        </h2>
+                        <div id="flush-collapseFour" className="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                          <div className="accordion-body">You haven’t to worry about our experience and quality. You can fully rely on our service for a better future of your company or business.</div>
+                        </div>
+                      </div>
+                      <div className="accordion-item">
+                        <h2 className="accordion-header" id="flush-headingFive">
+                          <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                            Support after service
+                          </button>
+                        </h2>
+                        <div id="flush-collapseFive" className="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+                          <div className="accordion-body">You haven’t to worry about our experience and quality. You can fully rely on our service for a better future of your company or business.</div>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
+
               </div>
 
             </div>

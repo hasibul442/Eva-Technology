@@ -63,3 +63,55 @@
 .team-member{
     background-color: #fff;
 }
+
+.profile-pic .img-box{
+    opacity: 1px;
+    display: block;
+    position: relative;
+    
+}
+.profile-pic .img-box:hover{
+    box-shadow: 1px solid #000;
+}
+.profile-pic h2{
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 15px;
+    color: blue;
+}
+.profile-pic h3{
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+.profile-pic .fab{
+    height: 40px;
+    width: 40px;
+    color: #ffffff;
+    background: #ff0000;
+    padding: 30%;
+    border-radius: 50%;
+}
+.img-box ul{
+    /* padding: 15px 0; */
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+}
+.img-box ul li{
+    padding: 5px;
+    display: inline-block;
+}
+.img-box:hover ul{
+    opacity: 1;
+}
+.img-box ul, .img-box ul li{
+    transition: 0.5s;
+}
+/* .profile-pic img{
+    width: 200px;
+    height: 200px;
+} */

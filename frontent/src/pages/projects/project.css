@@ -1,0 +1,15 @@
+.project{
+    background-image: linear-gradient(#f60188cc,#99046fcc),url('./../../../public/project/project-bg.jpg');
+    width: auto;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* opacity: 0.3; */
+}
+.item--title{
+    color: #fff;
+}
+.project div{
+    padding-top: 10%;
+}
