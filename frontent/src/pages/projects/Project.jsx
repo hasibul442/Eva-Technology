@@ -31,30 +31,34 @@ function Project() {
                 <p className='text-center item--title'>We will create such kind of web or graphics for you or you business. It will be fully professional and beautifull.</p>
             </div>
       </div>
-      <div className="container pt-5">
+      <div className="container pt-5 mb-5">
 
-        <div>
-          <a className="btn btn-outline-primary pr-2 mr-3" onClick={handleFilterKeyChange('*')} role="button">All</a>
-          <a className="btn btn-outline-primary" onClick={handleFilterKeyChange('webpage')} role="button">Link</a>
-          <a className="btn btn-outline-primary" onClick={handleFilterKeyChange('webapplication')} role="button">Link</a>
+        <div className="text-center mx-2">
+          <a className="btn btn-outline-primary mx-2" onClick={handleFilterKeyChange('*')}>All</a>
+          <a className="btn btn-outline-success mx-2" onClick={handleFilterKeyChange('webpage')}>Web Site</a>
+          <a className="btn btn-outline-danger mx-2" onClick={handleFilterKeyChange('ecommerce')}>Ecommerce</a>
+          <a className="btn btn-outline-info mx-2" onClick={handleFilterKeyChange('software')}>Software</a>
+          <a className="btn btn-outline-warning mx-2" onClick={handleFilterKeyChange('design')}>Design</a>
         </div>
 
-
-
-          <ul className="filter-container">
+        <div className="row ">
+          <div className="filter-container">
+          <div className="col-sm-4 ">
             <div className="filter-item webpage">
-              <span>Cucumber</span>
+              <img src="/project/canteen.png" className="img-fluid"/>
             </div>
-            <div className="filter-item webapplication">
-              <span>Apple</span>
+          </div>
+
+          <div className="col-sm-4 filter-item software">
+            <div className="">
+              <img src="/project/account.png" className="img-fluid"/>
             </div>
-            <div className="filter-item webpage">
-              <span>Orange</span>
-            </div>
-            <div className="filter-item webpage webapplication">
-              <span>Tomato</span>
-            </div>
-          </ul>
+          </div>
+          </div>
+          
+        </div>
+
+          
       </div>
     </>
   )
