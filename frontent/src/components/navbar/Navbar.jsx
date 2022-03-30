@@ -29,24 +29,11 @@ function Navbar() {
                   <li className="nav-item">
                     <Link className="nav-link" to='/aboutus'>About Us</Link>
                   </li>
-                  {/* <li className="nav-item dropdown">
-                    <Link className="nav-link dropdown-toggle" to='/' id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      About
-                    </Link>
-                    <ul className={ click ? 'dropdown-menu border-0 active' : 'dropdown-menu border-0' } aria-labelledby="navbarDropdown">
-                      <li><Link className="dropdown-item" to='/aboutus'>About Us</Link></li>
-                      <li><Link className="dropdown-item" to='/mission'>Mission & Vision</Link></li>
-                      <li><Link className="dropdown-item" to='/director'>Directors</Link></li>
-                      <li><Link className="dropdown-item" to='/patner'>Patners</Link></li>
-                      <li><Link className="dropdown-item" to='/client'>Clients</Link></li>
-                      <li><Link className="dropdown-item" to='/teammember'>Team Member</Link></li>
-                    </ul>
-                  </li> */}
                   <li className="nav-item">
                     <Link className="nav-link" to='/services'>Services</Link>
                   </li>
                   <li className="nav-item">
-                    <Link className="nav-link" to='/contact' >Contact</Link>
+                    <Link className="nav-link" to='/contactus' >Contact</Link>
                   </li>
                 </ul>
               </div>

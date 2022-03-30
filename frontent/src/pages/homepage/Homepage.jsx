@@ -1,4 +1,4 @@
-import React,{ useRef } from 'react';
+import React,{ useState,useEffect , useRef } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -8,20 +8,19 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import CountUp from 'react-countup';
 
-import emailjs from '@emailjs/browser';
-import Swal from 'sweetalert2';
 
-import OwlCarousel from 'react-owl-carousel2';
 import 'react-owl-carousel2/lib/styles.css';
 import 'react-owl-carousel2/src/owl.theme.green.css';
 
 import Carousel1 from '../.././components/carousel/Carousel';
-
-
-// import Footer from '../.././components/footer/Footer';
-// import Navbar from "../.././components/navbar/Navbar";
+ 
+import Isotope from "isotope-layout";
+import gsap from "gsap";
 
 import  './homepage.css';
+import Contact from '../../components/contect-form/Contact';
+import Testimonial from '../../components/testimonial/Testimonial';
+import Clients from '../../components/client/Clients';
 
 function Homepage() {
   AOS.init({
@@ -29,70 +28,73 @@ function Homepage() {
     delay: 200,
     mirror: true
   });
+  const [isotope, setIsotope] = useState(null);
+  const [filterKey, setFilterKey] = useState("*");
 
-  const options = {
-    loop:true,
-    autoplay: true,
-    nav:true,
-    margin:100,
-    smartSpeed:2000,
-    responsive: {
-      0: {
-        items: 1,
-        
-      },
-      480: {
-        items: 2,
-      },
-      990: {
-        items: 3,
-      },
-    }
-    
-  };
+  useEffect(() => {
+    // const all = document.querySelector("#all");
+    const filters = gsap.utils.toArray(".filters li");
+    const items = gsap.utils.toArray(".item");
 
-  const options1 = {
-    loop:true,
-    autoplay: true,
-    smartSpeed:2000,
-    responsive: {
-      0: {
-        items: 1, 
-      },
-      480: {
-        items: 1,
-      },
-      990: {
-        items: 1,
-      },
-    }
-    
-  };
-  const form = useRef();
-  const sendEmail = (e) => {
-    e.preventDefault();
+    setIsotope(
+      new Isotope(".container", {
+        itemSelector: ".item",
+        layoutMode: "fitRows"
+      })
+    );
+  }, []);
 
-    emailjs.sendForm('service_vopraej', 'template_087yqxa', form.current, 'NaJAF7jbqGJBRwOll')
-      .then((result) => {
-        result = Swal.fire({
-          icon: 'success',
-          title: 'Your Message Is Sent Our Team Member Will Contact With You Soon',
-          showConfirmButton: false,
-          timer: 1500
-        });
-      }, (error) => {
-        error = Swal.fire({
-          icon: 'danger',
-          title: 'Opps. Please Try Again',
-          showConfirmButton: false,
-          timer: 1500
-        });
-      });
-      e.target.reset();
-  };
+  useEffect(
+    () => {
+      if (isotope) {
+        filterKey === "*"
+          ? isotope.arrange({ filter: `*` })
+          : isotope.arrange({ filter: `.${filterKey}` });
+      }
+    },
+    [isotope, filterKey]
+  );
+  
   return (
     <>
     <Carousel1/>
+          <section>
+          <h1 className="text-center mt-5" style={{ fontFamily: "'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif", fontSize: "50px", textTransform: "uppercase",fontWeight: "600", color:"#000"}}>Projects</h1>
+          <div className="filters text-center mt-5 mb-5">
+              <a className="btn btn-outline-primary mx-2" onClick={() => setFilterKey("*")}>All</a>
+              <a className="btn filter btn-outline-info mx-2" onClick={() => setFilterKey("application")}>Application</a>
+              <a className="btn filter btn-outline-danger mx-2" onClick={() => setFilterKey("ecommerce")}>Ecommerce</a>
+              {/* <a className="btn filter" onClick={() => setFilterKey("software")}>Software</a> */}
+              <a className="btn filter btn-outline-success mx-2" onClick={() => setFilterKey("design")}>Design</a>
+            </div>
+
+            <div className="container d-flex flex-row mx-auto pt-5 mb-5">
+              <div className="item application">
+                <img src="/project/Account.png" className="img-fluid project-image" alt ="Portfolio"/>
+              </div>
+              <div className="item design">
+                <img src="/project/design-3.png" className="img-fluid project-image" alt ="Portfolio"/>
+              </div>
+              <div className="item application">
+                <img src="/project/Hospital.png" className="img-fluid project-image" alt ="Portfolio"/>
+              </div>
+              <div className="item design">
+                <img src="/project/design.png" className="img-fluid project-image" alt ="Portfolio"/>
+              </div>
+              <div className="item application">
+                <img src="/project/POS.png" className="img-fluid project-image" alt ="Portfolio"/>
+              </div>
+              <div className="item design">
+                <img src="/project/design-2.png" className="img-fluid project-image" alt ="Portfolio"/>
+              </div>
+              <div className="item application">
+                <img src="/project/DMS.png" className="img-fluid project-image" alt ="Portfolio"/>
+              </div>
+              <div className="item ecommerce">
+                <img src="/project/Ecom.png" className="img-fluid project-image" alt ="Portfolio"/>
+              </div>
+            </div>
+          </section>
           <section className='total-count'>
               <div className='container'>
                   <div className="row pt-4">
@@ -111,6 +113,7 @@ function Homepage() {
                   </div>
               </div>
           </section>
+
           <div className='container desktop-view'>
               <h2 className='pt-5 text-center'>What We Provide</h2>
               <div className='solid-solution-box mx-auto'>
@@ -490,66 +493,14 @@ function Homepage() {
                 </div>
           </section>
 
-          <section className='Our-Customer mt-5' style={{ "backgroundColor":"#fff" }}>
-            <div className='container pt-5'>
-              <h2 className='text-center'>Our Customers</h2>
-              <p className='text-center'>Few of the companies who get our services are showing here. <br/>A lot of company have worked with us like this.</p>
+          <div>
+            <Clients />
+          </div>
 
-              <OwlCarousel options={options}>
+          <div>
+            <Testimonial/>
+          </div>
 
-                  <div className=" card border-0">
-                    <div className="card-body text-center">
-                       <div className='p-5'>
-                          <img src= "client/army.png" className=' client-img ' alt="Client" data-toggle="tooltip" data-placement="top" title="Jessore Cantonment" />
-                       </div>
-                    </div>
-                  </div>
-                  <div className="card border-0">
-                    <div className="card-body text-center">
-                      <div className='p-5'>
-                        <img src= "client/cccc.png" className=' client-img ' alt="Client" data-toggle="tooltip" data-placement="top" title="China Communiction Construct Company" />
-                      </div>
-                    </div>
-                  </div>
-                  <div className="card border-0">
-                    <div className="card-body text-center">
-                      <div className='p-5'>
-                        <img src= "client/OSL.png" className=' client-img ' alt="Client" data-toggle="tooltip" data-placement="top" title="OSL-KNS Group" />
-                      </div>  
-                    </div>
-                  </div>
-              
-
-              </OwlCarousel>
-            </div>
-          </section>
-
-          <section className='testimonial mt-5'>
-            <div className='container p-5'>
-              <OwlCarousel options={options1}>
-
-                  <div>
-                    <div className="text-center">
-                        <h3 className='text-center'>"Amazing Designs and Quality Work!"</h3>
-                        <p>Great work from Eva Technology, I am so amazed with their service.<br/> I am grateful to them. They have provided quality work for us. I will recommended to other for getting best IT service.<br/> People can choose Eva Technology doubtfully for their it solution.</p>
-                        <h4 style={{ "color": "#1414ef" }}>Mohammad Mahbub Hassan</h4>
-                        <h6 style={{ "color": "#f60186" }}>"Chairman of OSL-KNS Group"</h6>
-                    </div>
-                  </div>
-              
-                  <div>
-                    <div className="text-center">
-                        <h3 className='text-center'>"Great Service"</h3>
-                        <p>Very good experience with Eva Technology. So impress by reactivity and the website result. He took time to understand my request and was really reactive.<br/> I will definitely recommend Eva Technology to my friend. Thanks a lot, you made my day.</p>
-                        <h4 style={{ "color": "#1414ef" }}>17BIR (Bangladesh Infantry Regiment) </h4>
-                        <h6 style={{ "color": "#f60186" }}>"Jessore Cantonment, Jessore"</h6>
-                    </div>
-                  </div>
-              
-
-              </OwlCarousel>
-            </div>
-          </section>
 
           <section className='contact' style={{ "backgroundColor":"#fff" }}>
             <div className='container pt-5'>
@@ -561,28 +512,7 @@ function Homepage() {
 
                 <div className='col-sm-6'>
 
-                  <form ref={form} onSubmit={sendEmail}>
-                    <div className="form-group">
-                      <input type="text" className="form-control" name="full_name"  placeholder="Full Name" required/>
-                    </div>
-                    <br/>
-                    <div className="form-group">
-                      <input type="email" className="form-control" name="email" id="email" placeholder="Email" required/>
-                    </div>
-                    <br/>
-                    <div className="form-group">
-                      <input type="text" className="form-control"  placeholder="Subject" name="subject" required/>
-                    </div>
-                    <br/>
-                    <div className="form-group">
-                      <textarea  rows="6" className="form-control" name="message" placeholder="Discription" required></textarea>
-                    </div>
-                    <br/>
-
-                    <div className="text-right clearfix mb-2">
-                      <button type="submit" className="float-right btn btn-primary">Send Message</button> 
-                    </div>
-                  </form>
+                  <Contact />
                 </div>
               </div>
               

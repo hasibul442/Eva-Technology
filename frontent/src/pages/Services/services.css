@@ -1,0 +1,28 @@
+.services{
+    background-image: linear-gradient(#f60188cc,#99046fcc),url('./../../../public/service/service.jpg');
+    width: auto;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* opacity: 0.3; */
+}
+.item--title{
+    color: #fff;
+}
+.services div{
+    padding-top: 10%;
+}
+.card-block-title{
+    margin-top: 20px;
+    font-size: 25px;
+    font-weight: 600; 
+    color:#1414ef;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif 
+}
+.card-block-text{
+    font-family: 'Franklin',  sans-serif 
+}
+.service-block{
+    height: 350px;
+}

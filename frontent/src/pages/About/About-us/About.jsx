@@ -7,7 +7,7 @@ function About() {
     <>
         <div className='about-us-qutaion'>
             <div>
-                <h2 className="text-center item--title">About Us</h2>
+                <h2 className="text-center" style={{ fontFamily: "'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif", fontSize: "50px", textTransform: "uppercase",fontWeight: "600", color:"#fff"}}>About Us</h2>
                 <h5 className='text-center item--title'>Welcome to The Digital Agency</h5>
                 <p className='text-center item--title'>Make your company befitting and compatible with latest technology. We create stunning and professional business website worldwide.</p>
             </div>
@@ -89,31 +89,6 @@ function About() {
             </div>
         </div>
 
-        {/* <div className='team-member'>
-          <div className='container pt-5'>
-            <p className='h1 text-center' style={{ fontWeight:"700" }}>Our Team Member</p>
-            <p className='text-center'>Some of our talented, skilled and experienced it expert. They are our dedicated member of Eva Technology.</p>
-
-            <div className="col-md-4 profile-pic text-center">
-                <div className="img-box">
-                    <img src="/about/info.png" className="img-fluid"/>
-                      <ul>
-                        <a href="#">
-                          <li><i className="fab fa-facebook"></i></li>
-                        </a>
-                        <a href="#">
-                          <li><i className="fab fa-twitter"></i></li>
-                        </a>
-                        <a href="#">
-                          <li><i className="fab fa-linkedin"></i></li>
-                        </a>
-                      </ul>
-                </div>
-                <h2>Evana Jahan </h2>
-                <h3>Founder / CEO</h3>
-            </div>
-            </div>
-        </div> */}
 
         <div>
           <div className='container pt-5 mb-5'>
