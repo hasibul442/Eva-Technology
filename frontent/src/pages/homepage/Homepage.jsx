@@ -1,5 +1,4 @@
-import React,{ useState,useEffect , useRef } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import React from 'react';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
@@ -13,14 +12,12 @@ import 'react-owl-carousel2/lib/styles.css';
 import 'react-owl-carousel2/src/owl.theme.green.css';
 
 import Carousel1 from '../.././components/carousel/Carousel';
- 
-import Isotope from "isotope-layout";
-import gsap from "gsap";
 
 import  './homepage.css';
 import Contact from '../../components/contect-form/Contact';
 import Testimonial from '../../components/testimonial/Testimonial';
 import Clients from '../../components/client/Clients';
+import Project from '../../components/project/Project';
 
 function Homepage() {
   AOS.init({
@@ -28,72 +25,14 @@ function Homepage() {
     delay: 200,
     mirror: true
   });
-  const [isotope, setIsotope] = useState(null);
-  const [filterKey, setFilterKey] = useState("*");
 
-  useEffect(() => {
-    // const all = document.querySelector("#all");
-    const filters = gsap.utils.toArray(".filters li");
-    const items = gsap.utils.toArray(".item");
-
-    setIsotope(
-      new Isotope(".container", {
-        itemSelector: ".item",
-        layoutMode: "fitRows"
-      })
-    );
-  }, []);
-
-  useEffect(
-    () => {
-      if (isotope) {
-        filterKey === "*"
-          ? isotope.arrange({ filter: `*` })
-          : isotope.arrange({ filter: `.${filterKey}` });
-      }
-    },
-    [isotope, filterKey]
-  );
   
   return (
     <>
     <Carousel1/>
           <section>
-          <h1 className="text-center mt-5" style={{ fontFamily: "'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif", fontSize: "50px", textTransform: "uppercase",fontWeight: "600", color:"#000"}}>Projects</h1>
-          <div className="filters text-center mt-5 mb-5">
-              <a className="btn btn-outline-primary mx-2" onClick={() => setFilterKey("*")}>All</a>
-              <a className="btn filter btn-outline-info mx-2" onClick={() => setFilterKey("application")}>Application</a>
-              <a className="btn filter btn-outline-danger mx-2" onClick={() => setFilterKey("ecommerce")}>Ecommerce</a>
-              {/* <a className="btn filter" onClick={() => setFilterKey("software")}>Software</a> */}
-              <a className="btn filter btn-outline-success mx-2" onClick={() => setFilterKey("design")}>Design</a>
-            </div>
-
-            <div className="container d-flex flex-row mx-auto pt-5 mb-5">
-              <div className="item application">
-                <img src="/project/Account.png" className="img-fluid project-image" alt ="Portfolio"/>
-              </div>
-              <div className="item design">
-                <img src="/project/design-3.png" className="img-fluid project-image" alt ="Portfolio"/>
-              </div>
-              <div className="item application">
-                <img src="/project/Hospital.png" className="img-fluid project-image" alt ="Portfolio"/>
-              </div>
-              <div className="item design">
-                <img src="/project/design.png" className="img-fluid project-image" alt ="Portfolio"/>
-              </div>
-              <div className="item application">
-                <img src="/project/POS.png" className="img-fluid project-image" alt ="Portfolio"/>
-              </div>
-              <div className="item design">
-                <img src="/project/design-2.png" className="img-fluid project-image" alt ="Portfolio"/>
-              </div>
-              <div className="item application">
-                <img src="/project/DMS.png" className="img-fluid project-image" alt ="Portfolio"/>
-              </div>
-              <div className="item ecommerce">
-                <img src="/project/Ecom.png" className="img-fluid project-image" alt ="Portfolio"/>
-              </div>
-            </div>
+            <h1 className="text-center mt-5" style={{ fontFamily: "'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif", fontSize: "50px", textTransform: "uppercase",fontWeight: "600", color:"#000"}}>Projects</h1>
+          <Project/>
           </section>
           <section className='total-count'>
               <div className='container'>
@@ -115,7 +54,7 @@ function Homepage() {
           </section>
 
           <div className='container desktop-view'>
-              <h2 className='pt-5 text-center'>What We Provide</h2>
+              <h2 className='pt-5 text-center' style={{ fontFamily: "'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif", fontSize: "50px", textTransform: "uppercase",fontWeight: "600", color:"#000"}}>What We Provide</h2>
               <div className='solid-solution-box mx-auto'>
                 <h6 className='text-center solid-solution-text-1'>Solid Solution</h6>
               </div>
@@ -234,7 +173,7 @@ function Homepage() {
 
           <div className='container'>
               <div className='mobile-view'>
-              <h2 className='pt-5 text-center'>What We Provide</h2>
+              <h2 className='pt-5 text-center' style={{ fontFamily: "'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif", fontSize: "50px", textTransform: "uppercase",fontWeight: "600", color:"#000"}}>What We Provide</h2>
               <div className='solid-solution-box mx-auto'>
                 <h6 className='text-center solid-solution-text-1'>Solid Solution</h6>
               </div>
@@ -373,7 +312,7 @@ function Homepage() {
           <section className="container-xl-12 ">
               <div className='about-us'>
                   <div className='card-body'>
-                    <h2 className='pt-5 text-center text-light'>About Us</h2>
+                    <h2 className='pt-5 text-center text-light' style={{ fontFamily: "'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif", fontSize: "50px", textTransform: "uppercase",fontWeight: "600", color:"#fff"}}>About Us</h2>
                     <div className='row pt-5'>
                       <div className='col-md-6 '>
                         <div className='text-center'>
@@ -391,7 +330,7 @@ function Homepage() {
           </section>
 
           <section className="container">
-                <h2 className='pt-5 text-center why-hire-headline'>Why You Should Hire Us?</h2>
+                <h2 className='pt-5 text-center why-hire-headline' style={{ fontFamily: "'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif", fontSize: "50px", textTransform: "uppercase",fontWeight: "600", color:"#000"}}>Why You Should Hire Us?</h2>
                 <div className='row pt-5'>
 
                   <div className='col-md-3 pb-4'>

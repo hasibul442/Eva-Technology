@@ -13,7 +13,7 @@ function Navbar() {
        <div id='nav-bar'>
         <nav className="navbar navbar-expand-lg">
             <div className="container-fluid">
-              <Link to='/' className="navbar-brand" href="#"><img src="Eva-Tech-Full-Logo1.png" className="navbar-company-logo" alt='Company Logo'/></Link>
+              <Link to='/' className="navbar-brand" href="#"><img src="Eva-Tech.png" className="navbar-company-logo" alt='Company Logo'/></Link>
               <div className='menu-icon navbar-toggler' onClick={handleClick} data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                   <i className= {click ? 'fas fa-times' : 'fas fa-bars'}></i>
               </div>

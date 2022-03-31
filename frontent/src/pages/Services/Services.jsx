@@ -19,12 +19,33 @@ function Services() {
            <p className='text-center'>We are offering you essential all type IT service for your business. It will <br/> take away your business in a new dimension.</p>
 
            <div className='row'>
+
+             <div className='col-lg-4 mt-4'>
+               <div className='card service-block border-0 shadow'>
+                 <div className='card-body text-center'>
+                    <i className="fad fa-brackets fa-3x" style={{ color: "#99046f" }}></i>
+                    <p className='card-block-title'>Software Development</p>
+                    <p className='card-block-text'>Software development relies heavily on manual processes for transforming requirements into software artifacts such as models, source code, or test cases. Requirements are the starting point for these transformations, and they are typically written in natural language.</p>
+                 </div>
+               </div>
+             </div>
+
              <div className='col-lg-4 mt-4'>
                <div className='card service-block border-0 shadow'>
                  <div className='card-body text-center'>
                     <i className="fad fa-code fa-3x" style={{ color: "#99046f" }}></i>
                     <p className='card-block-title'>Web Development</p>
                     <p className='card-block-text'>Now a days, it is must need a user-freindly, responsive and dynamic website for a company/business. It represents your information and service to your customer perfectly.Our experienced and skilled web developer will develop a full functional website for you.</p>
+                 </div>
+               </div>
+             </div>
+
+             <div className='col-lg-4 mt-4'>
+               <div className='card service-block border-0 shadow'>
+                 <div className='card-body text-center'>
+                    <i className="fad fa-dumpster-fire fa-3x" style={{ color: "#99046f" }}></i>
+                    <p className='card-block-title'>E-Commerce Development</p>
+                    <p className='card-block-text'>Now a days customers are willing to buy goods and services online and we provide E-commerce website development for companies to work efficiently. We will develop a full functional e-commerce website for you business.</p>
                  </div>
                </div>
              </div>
@@ -49,25 +70,8 @@ function Services() {
                </div>
              </div>
 
-             <div className='col-lg-4 mt-4'>
-               <div className='card service-block border-0 shadow'>
-                 <div className='card-body text-center'>
-                    <i className="fad fa-poll-people fa-3x" style={{ color: "#99046f" }}></i>
-                    <p className='card-block-title'>Search Engine Optimization (SEO)</p>
-                    <p className='card-block-text'>Optimize your site for search engines to get found by your consumers. Today it is far more important to get updated with the strategy of search engine. Our high skilled SEO professional is able to provide the exact Organic SEO solution for your exact specifications.</p>
-                 </div>
-               </div>
-             </div>
 
-             <div className='col-lg-4 mt-4'>
-               <div className='card service-block border-0 shadow'>
-                 <div className='card-body text-center'>
-                    <i className="fad fa-dumpster-fire fa-3x" style={{ color: "#99046f" }}></i>
-                    <p className='card-block-title'>E-Commerce Development</p>
-                    <p className='card-block-text'>Nowadays customers are willing to buy goods and services online and we provide E-commerce website development for companies to work efficiently. We will develop a full functional e-commerce website for you business.</p>
-                 </div>
-               </div>
-             </div>
+
 
              <div className='col-lg-4 mt-4'>
                <div className='card service-block border-0 shadow'>

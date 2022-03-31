@@ -26,7 +26,7 @@ function Clients() {
     <>
         <section className='Our-Customer mt-5' style={{ "backgroundColor":"#fff" }}>
             <div className='container pt-5'>
-              <h2 className='text-center'>Our Customers</h2>
+              <h2 className='text-center'style={{ fontFamily: "'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif", fontSize: "50px", textTransform: "uppercase",fontWeight: "600", color:"#000"}}>Our Customers</h2>
               <p className='text-center'>Few of the companies who get our services are showing here. <br/>A lot of company have worked with us like this.</p>
 
               <OwlCarousel options={options}>
