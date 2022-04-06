@@ -45,29 +45,50 @@ useEffect(
               <div className="item application">
                 <img src="/project/Account.png" className="img-fluid project-image" alt ="Portfolio"/>
                 <div className='overlay'>
-                  <div className='text'>DDDDDDDD</div>
+                  <div className='text'>Account Management System</div>
                 </div>
               </div>
               <div className="item design">
                 <img src="/project/design-3.png" className="img-fluid project-image" alt ="Portfolio"/>
+                <div className='overlay'>
+                  <div className='text'>Web Page Design</div>
+                </div>
               </div>
               <div className="item application">
                 <img src="/project/Hospital.png" className="img-fluid project-image" alt ="Portfolio"/>
+                <div className='overlay'>
+                  <div className='text'>Hospital Management Software</div>
+                </div>
               </div>
               <div className="item design">
                 <img src="/project/design.png" className="img-fluid project-image" alt ="Portfolio"/>
+                <div className='overlay'>
+                  <div className='text'>Web Site Design</div>
+                </div>
               </div>
               <div className="item application">
                 <img src="/project/POS.png" className="img-fluid project-image" alt ="Portfolio"/>
+                <div className='overlay'>
+                  <div className='text'>Point Of Sale (POS) System</div>
+                </div>
               </div>
               <div className="item design">
                 <img src="/project/design-2.png" className="img-fluid project-image" alt ="Portfolio"/>
+                <div className='overlay'>
+                  <div className='text'>Web Site Design</div>
+                </div>
               </div>
               <div className="item application">
                 <img src="/project/DMS.png" className="img-fluid project-image" alt ="Portfolio"/>
+                <div className='overlay'>
+                  <div className='text'>Document Management Software</div>
+                </div>
               </div>
               <div className="item ecommerce">
                 <img src="/project/Ecom.png" className="img-fluid project-image" alt ="Portfolio"/>
+                <div className='overlay'>
+                  <div className='text'>Ecommerce Development</div>
+                </div>
               </div>
             </div>
 
