@@ -32,7 +32,10 @@ function Homepage() {
     <Carousel1/>
           <section>
             <h1 className="text-center mt-5" style={{ fontFamily: "'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif", fontSize: "50px", textTransform: "uppercase",fontWeight: "600", color:"#000"}}>Projects</h1>
-          <Project/>
+
+            <div className="container">
+
+            </div>
           </section>
           <section className='total-count'>
               <div className='container'>
@@ -46,8 +49,8 @@ function Homepage() {
                       <p className='text-white' style={{ fontSize:"24px", fontWeight:"600"}}>HAPPY CUSTOMERS</p>
                     </div>
                     <div className="p-2 col-sm-4 text-center">
-                      <p className='text-white' style={{ fontSize:"100px", fontWeight:"600"}}> <CountUp end={1} /></p>
-                      <p className='text-white' style={{ fontSize:"24px", fontWeight:"600"}}>YEARS OF EXPERIENCE</p>
+                      <p className='text-white' style={{ fontSize:"100px", fontWeight:"600"}}> <CountUp end={200} />K</p>
+                      <p className='text-white' style={{ fontSize:"24px", fontWeight:"600"}}>Visitor</p>
                     </div>
                   </div>
               </div>

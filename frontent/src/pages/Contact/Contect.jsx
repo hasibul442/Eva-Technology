@@ -16,6 +16,7 @@ function Contect() {
                     <p className='text-center item--title'>Feel free to contact with us. We are always waiting eagerly for you to help. Contact with us, discuss about your project and get the best solution from us.</p>
                 </div>
         </div>
+        
         <section className='contact pb-5' style={{ "backgroundColor":"#fff" }}>
             <div className='container pt-5'>
               <div className='row'>

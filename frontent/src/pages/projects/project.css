@@ -14,3 +14,87 @@
     padding-top: 10%;
 }
 
+.go-corner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    top: 0;
+    right: 0;
+    background-color: #31087B;
+    border-radius: 0 4px 0 32px;
+  }
+  
+  .go-arrow {
+    margin-top: -4px;
+    margin-right: -4px;
+    color: white;
+    font-family: courier, sans;
+  }
+  
+  .card1 {
+    /* display: block; */
+    height: 430px;
+    /* position: relative; */
+    background: rgba(255, 255, 255, 0.86);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9.4px);
+    -webkit-backdrop-filter: blur(9.4px);
+    /* padding-top: 32px; */
+    margin: 12px;
+    text-decoration: none;
+    z-index: 0;
+    overflow: hidden;
+    transition: 0.5s;
+  }
+  
+  .card1:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: -15px;
+    right: -15px;
+    background: #31087B;
+    height: 40px;
+    width: 40px;
+    border-radius: 40px;
+    transform: scale(1);
+    transform-origin: 50% 50%;
+    transition: transform 0.5s ease-out;
+  }
+  
+  .card1:hover:before {
+    transform: scale(30);
+  }
+  
+  .card1:hover p {
+    transition: all 0.5s ease-out;
+    color: #ffffff;
+  }
+  
+  .card1:hover h3 {
+    transition: all 0.3s ease-out;
+    color: #ffffff;
+  }
+  
+  .project-link {
+    text-decoration: none;
+    color: #000;
+  }
+  
+  .project-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #000000;
+    margin-bottom: 8px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    transition: 0.5s;
+  }
+  .project-description{
+    transition: 0.5s;
+  }

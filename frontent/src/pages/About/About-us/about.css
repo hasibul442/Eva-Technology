@@ -1,117 +1,132 @@
 .about-us-qutaion{
-    background-image: linear-gradient(#f60188cc,#99046fcc),url('./../../../../public/about/about-background.webp');
-    width: auto;
+    background-image: linear-gradient(#f6018800,#99046fcc),url('./../../../../public/about/about-background.webp');
+    background-position: center;
+    background-size: cover;
+    width: 100%;
     height: 500px;
     /* opacity: 0.3; */
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 .item--title{
     color: #fff;
 }
+.about-us-title{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    color: #1414ef;
+    text-transform: uppercase;
+}
+.about-us-title:after, .about-us-title:before{
+    position: relative;
+    content: '';
+    display: inline-block;
+    width: 100px;
+    height: 3px;
+    background-color: #f25f61;
+    vertical-align: middle;
+}
 .about-us-qutaion div{
     padding-top: 10%;
 }
-.mission-block{
-    transform: translate(0, -20%);
-}
-.mission-block-card{
-    background-color: #ffffff;
-    border: none;
-    /* height: 500px; */
-    --border-width: 3px;
-    border-radius: var(--border-width);
-}
-.mission-block-card::after {
-    position: absolute;
-    content: "";
-    top: calc(-1 * var(--border-width));
-    left: calc(-1 * var(--border-width));
-    z-index: -1;
-    width: calc(100% + var(--border-width) * 2);
-    height: calc(100% + var(--border-width) * 2);
-    background: linear-gradient(
-      60deg,
-      #5f86f2,
-      #a65ff2,
-      #f25fd0,
-      #f25f61,
-      #f2cb5f,
-      #abf25f,
-      #5ff281,
-      #5ff2f0
-    );
-    background-size: 300% 300%;
-    background-position: 0 50%;
-    border-radius: calc(2 * var(--border-width));
-    animation: moveGradient 5s alternate infinite;
-  }
 
 
-@keyframes moveGradient {
-  50% {
-    background-position: 100% 50%;
-  }
+
+.about-us-img{
+    /* width: 350px; */
+    height: 400px;
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    animation: morph 8s ease-in-out infinite;
+    box-shadow: 5px 10px 18px #888888;
 }
+
+@keyframes morph {
+    0% {
+      border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    }
+    25% {
+      border-radius: 43% 57% 35% 65% / 36% 35% 65% 64%;
+    }
+    50% {
+      border-radius: 16% 84% 35% 65% / 17% 35% 65% 83%;
+    }
+    75% {
+      border-radius: 79% 21% 55% 45% / 76% 64% 36% 24%;
+    }
+    100% {
+      border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    }
+  }
+.about-us-text{
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 550;
+
+}
+.card-aboutus{
+    /* From https://css.glass */
+background: rgba(255, 255, 255, 0.86);
+border-radius: 16px;
+box-shadow: 0 8px 20px #f60186;
+backdrop-filter: blur(7.3px);
+-webkit-backdrop-filter: blur(7.3px);
+}
+
+.card-mission{
+    /* From https://css.glass */
+background: rgba(255, 255, 255, 0.86);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(7.3px);
+-webkit-backdrop-filter: blur(7.3px);
+}
+
 .mission-text{
-    color: #1414ef;
-    /* font-weight: 700; */
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 550;
 }
-
-.company-info{
-    background-color: #1414ef93;
+.mission-icon-text{
+    padding-top: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 26px;
+    font-weight: 600;
 }
-
-.team-member{
-    background-color: #fff;
+.value-bg{
+    background-image: url('./../../../../public/about/about-us-vission.jpeg');
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
-
-.profile-pic .img-box{
-    opacity: 1px;
-    display: block;
-    position: relative;
-    
+.card-vision{
+background: rgba(255, 255, 255, 0.86);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(9.4px);
+-webkit-backdrop-filter: blur(9.4px);
 }
-.profile-pic .img-box:hover{
-    box-shadow: 1px solid #000;
+.vision-text{
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
 }
-.profile-pic h2{
-    font-size: 22px;
-    font-weight: bold;
-    margin-top: 15px;
-    color: blue;
+.card-exp{
+    background: rgba(255, 255, 255, 0.86);
+    border-radius: 16px;
+    box-shadow: 0 8px 20px #f6018888;
+    backdrop-filter: blur(9.4px);
+    -webkit-backdrop-filter: blur(9.4px);
 }
-.profile-pic h3{
-    font-size: 15px;
-    font-weight: bold;
-    margin-top: 15px;
+.my-anchor-css-class, .exp-text{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 2rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
 }
-.profile-pic .fab{
-    height: 40px;
-    width: 40px;
-    color: #ffffff;
-    background: #ff0000;
-    padding: 30%;
-    border-radius: 50%;
-}
-.img-box ul{
-    /* padding: 15px 0; */
-    position: absolute;
-    z-index: 2;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    opacity: 0;
-}
-.img-box ul li{
-    padding: 5px;
-    display: inline-block;
-}
-.img-box:hover ul{
-    opacity: 1;
-}
-.img-box ul, .img-box ul li{
-    transition: 0.5s;
-}
-/* .profile-pic img{
-    width: 200px;
-    height: 200px;
-} */

@@ -12,7 +12,7 @@ function Navbar() {
     <>
        <div id='nav-bar'>
         <nav className="navbar navbar-expand-lg">
-            <div className="container-fluid">
+            <div className="container">
               <Link to='/' className="navbar-brand" href="#"><img src="Eva-Tech.png" className="navbar-company-logo" alt='Company Logo'/></Link>
               <div className='menu-icon navbar-toggler' onClick={handleClick} data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                   <i className= {click ? 'fas fa-times' : 'fas fa-bars'}></i>
@@ -24,16 +24,19 @@ function Navbar() {
                     <Link className="nav-link pl-2" to='/' >Home</Link>
                   </li>
                   <li className="nav-item">
-                    <Link className="nav-link" to='/portfolio'>Portfolio</Link>
+                    <Link className="nav-link" to='/projects'>Projects</Link>
                   </li>
                   <li className="nav-item">
                     <Link className="nav-link" to='/aboutus'>About Us</Link>
                   </li>
+                  {/* <li className="nav-item">
+                    <Link className="nav-link" to='/products'>Products</Link>
+                  </li> */}
                   <li className="nav-item">
                     <Link className="nav-link" to='/services'>Services</Link>
                   </li>
                   <li className="nav-item">
-                    <Link className="nav-link" to='/contactus' >Contact</Link>
+                    <Link className="nav-link" to='/contactus' >Contact Us</Link>
                   </li>
                 </ul>
               </div>

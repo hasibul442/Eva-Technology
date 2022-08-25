@@ -33,7 +33,7 @@ function Footer() {
               <span className='p'><i className="fas fa-building"></i>&nbsp;Plot – 34, Sonargaon Janapath Road, Sector – 11, Uttara, Dhaka – 1230</span><br/>
               <span className='p'><i className="far fa-mobile"></i>&nbsp;<a href="tel:+8801300419612" className='tel-link'>(+880) 1300419612</a></span><br/>
               <span className='p'><i className="fas fa-envelope"></i>&nbsp;<a href="mailto:info@evatech.org" className='tel-link'>info@evatech.org</a></span><br/>
-              <span className='p'><i className="fab fa-facebook"></i>&nbsp;<a target="_blank" href="https://www.facebook.com/evatechltd" className='tel-link'>Eva Technology</a></span><br/>
+              <span className='p'><i className="fab fa-facebook"></i>&nbsp;<a href="https://www.facebook.com/evatechltd" className='tel-link'>Eva Technology</a></span><br/>
             </div>
             </div>
           </div>
