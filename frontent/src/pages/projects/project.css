@@ -98,3 +98,7 @@
   .project-description{
     transition: 0.5s;
   }
+  .project-details-discription{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+  }

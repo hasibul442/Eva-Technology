@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
@@ -19,6 +19,8 @@ import Testimonial from '../../components/testimonial/Testimonial';
 import Clients from '../../components/client/Clients';
 import Project from '../../components/project/Project';
 
+import  countapi  from 'countapi-js';
+
 function Homepage() {
   AOS.init({
     duration: 800,
@@ -26,15 +28,30 @@ function Homepage() {
     mirror: true
   });
 
-  
+  const [countnumber, setCountnumber] = useState("");
+  // let number = countnumber;
+  useEffect(() => {
+    countapi.update('evatech.org','evatech', 1).then(result => {
+      // if(result.value >= 1000){
+      //   let number = result.value / 1000;
+      //   setCountnumber(parseInt(number));
+      // }
+      // else{
+      //   let number = result.value;
+      //   setCountnumber(number);
+      // }
+      setCountnumber(result);
+    });
+  }, []);
+   console.log(countnumber);
   return (
     <>
     <Carousel1/>
           <section>
             <h1 className="text-center mt-5" style={{ fontFamily: "'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif", fontSize: "50px", textTransform: "uppercase",fontWeight: "600", color:"#000"}}>Projects</h1>
 
-            <div className="container">
-
+            <div>
+              <Project />
             </div>
           </section>
           <section className='total-count'>
@@ -49,7 +66,22 @@ function Homepage() {
                       <p className='text-white' style={{ fontSize:"24px", fontWeight:"600"}}>HAPPY CUSTOMERS</p>
                     </div>
                     <div className="p-2 col-sm-4 text-center">
-                      <p className='text-white' style={{ fontSize:"100px", fontWeight:"600"}}> <CountUp end={200} />K</p>
+                      
+                        {(()=>{
+                          if(countnumber.value >= 1000){
+                            let number = countnumber.value / 1000;
+                            return(<p className='text-white' style={{ fontSize:"100px", fontWeight:"600"}}> 
+                              <CountUp end={parseInt(number)} />K</p>
+                            )
+                             
+                          }
+                          else{
+                            return(<p className='text-white' style={{ fontSize:"100px", fontWeight:"600"}}> 
+                              <CountUp end={parseInt(countnumber.value )} />  </p>
+                            )
+                          }
+                        })()}
+                      
                       <p className='text-white' style={{ fontSize:"24px", fontWeight:"600"}}>Visitor</p>
                     </div>
                   </div>
