@@ -24,7 +24,7 @@ function Project() {
           </h5>
           <p className="text-center item--title">
             We will create such kind of web or graphics for you or you business.
-            It will be fully professional and beautifull.
+            It will be fully professional and beautiful.
           </p>
         </div>
       </div>
@@ -260,7 +260,7 @@ function Project() {
                 </p>
               </div>
               <div className="col-sm-4  m-auto text-center">
-                <a className="btn btn-primary">+8801300419612</a>
+                <a className="btn btn-primary">+8801766946459</a>
               </div>
             </div>
           </div>

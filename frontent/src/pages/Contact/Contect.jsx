@@ -51,7 +51,7 @@ Sector-3, Uttara, Dhaka-1230</p>
                 <p>Feel free to contact with us. We are always waiting eagerly for you to help. Contact with us, discuss about your project and get the best solution from us.</p>
               </div>
               <div className="col-sm-4  m-auto text-center">
-                <a className="btn btn-primary">+8801300419612</a>
+                <a className="btn btn-primary">+8801766946459</a>
               </div>
             </div>
           </div>
