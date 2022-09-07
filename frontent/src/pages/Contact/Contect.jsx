@@ -30,10 +30,11 @@ function Contect() {
                 <div className='col-sm-4 pt-3'>
                     <p className='contect-text'>Get In Touch</p>
                     <p className='h5'>Reach Us</p>
-                    <p className='p text-dark'><i className="fas fa-building"></i>&nbsp;Plot – 34, Sonargaon Janapath Road, Sector – 11, Uttara, Dhaka – 1230</p>
-                    <p className='p text-dark'><i className="far fa-mobile"></i>&nbsp;<a href="tel:+8801300419612" className='tel-link-con'>(+880) 1300419612</a></p>
+                    <p className='p text-dark'><i className="fas fa-building"></i>&nbsp;Level-3, House-21, Road-2,
+Sector-3, Uttara, Dhaka-1230</p>
+                    <p className='p text-dark'><i className="far fa-mobile"></i>&nbsp;<a href="tel:+8801766946459" className='tel-link-con'>(+880) 1766946459</a></p>
                     <p className='p text-dark'><i className="fas fa-envelope"></i>&nbsp;<a href="mailto:info@evatech.org" className='tel-link-con'>info@evatech.org</a></p>
-                    <p className='p text-dark'><i className="fab fa-facebook"></i>&nbsp;<a target="_blank" href="https://www.facebook.com/evatechltd" className='tel-link-con'>Eva Technology</a></p>
+                    <p className='p text-dark'><i className="fab fa-facebook"></i>&nbsp;<a target="_blank" href="https://www.facebook.com/evatechnology2" className='tel-link-con'>Eva Technology</a></p>
                 </div>
 
               </div>
